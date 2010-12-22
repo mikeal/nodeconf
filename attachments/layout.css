@@ -1,0 +1,208 @@
+html {background-color:#4F4F4F;}
+
+@font-face {
+  font-family: 'Reenie Beanie';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Reenie Beanie'), local('ReenieBeanie'), url('http://themes.googleusercontent.com/font?kit=ljpKc6CdXusL1cnGUSamX4jjx0o0jr6fNXxPgYh_a8Q') format('truetype');
+}
+@font-face {
+  font-family: 'Cantarell';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Cantarell Regular'), local('Cantarell-Regular'), url('http://themes.googleusercontent.com/font?kit=V86VyqXbc09Sss3BPsMj16CWcynf_cDxXwCLxiixG1c') format('truetype');
+}
+
+a:link, a:visited {
+  color:#BFEFFF;
+  text-decoration:none;
+}
+
+div.main-header {
+  width:100%;
+}
+
+div.logo {
+  width:100%;
+  text-align:center;
+  padding-top:10%;
+}
+
+div.info {
+  text-align:center;
+  font-size:80px;
+  color:#E3E3E3;
+  font-family:Reenie Beanie;
+}
+
+div.logo-on-page {
+  float:left;
+  padding-left:25%;
+  padding-top:2px;
+}
+div.info-on-page {
+  font-size:30px;
+  text-align:left;
+  padding-top:25px;
+  padding-left:5px;
+}
+
+div.spacer {
+  clear:both;
+}
+
+/* Call for proposals */
+
+div#proposals {
+  width:100%;
+  font-size:30px;
+}
+div#proposal-editor {
+  float:left;
+  padding-left:2%;
+  width:46%;
+}
+div#proposal-preview {
+  float:left;
+  width:48%%;
+  padding-right:2%;
+  padding-left:2%;
+  padding-top:20px;
+  font-family:Cantarell;
+  color:#E0E0E0;
+}
+
+div#proposal-editor div {
+  color:#E0E0E0;
+  font-family:Reenie Beanie;
+}
+
+div#proposal-info {
+  color:#E0E0E0;
+  font-family:Cantarell;
+  text-align:center;
+  padding-bottom:15px;
+}
+div#proposal-info p {
+  padding-left:20%;
+  padding-right:20%;
+  text-align:left;
+}
+
+div#proposals input, div#proposals textarea {
+  font-size:20px;
+  width:100%;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color:#E0E0E0;
+}
+
+div#proposals textarea {
+  height:500px;
+}
+
+div#proposals textarea#proposal-notes {
+  height:200px;
+}
+
+
+div.proposal-author {
+  width:100%;
+}
+div.proposal-name {
+  float:left;
+}
+div.proposal-avatar {
+  float:right;
+}
+img.proposal-avatar {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  text-align:right;
+}
+
+div.proposal-name {
+  font-size:35px;
+  padding-top:5px;
+  padding-left:10px;
+}
+
+div.proposal-short {
+  font-size:35px;
+  padding-top:5px;
+  padding-left:10px;
+}
+
+div.proposal-desc {
+  font-size:20px;
+  padding-top:18px;
+}
+
+div#speaker-info {
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+img.twitter-picture {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/*Twitter*/
+
+div.speaker-twitter-info {
+  width:100%;
+}
+div.speaker-twitter-name {
+  padding-left:15px;
+  float:left;
+}
+div.speaker-twitter-picture {
+  float:left;
+}
+div.speaker-twitter-description {
+  font-size:15px;
+}
+div.speaker-twitter-followcount {
+  float:left;
+  font-size:22px;
+  padding-left:20px;
+  padding-top:5px;
+}
+
+/*GitHub*/
+div.speaker-github-info {
+  width:100%;
+}
+div.speaker-github-url {
+  padding-left:15px;
+  float:left;
+}
+div.speaker-github-picture {
+  float:left;
+}
+div.speaker-github-followcount {
+  float:left;
+  font-size:18px;
+  padding-left:55px;
+}
+div.speaker-github-repos {
+  float:left;
+  font-size:18px;
+  padding-left:20px;
+}
+
+div#location-map {
+  height: 150px;
+  width: 100%;
+  margin-top:10px;
+  margin-bottom:20px;
+}
+img.github-picture {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
