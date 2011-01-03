@@ -13,6 +13,13 @@ html {background-color:#4F4F4F;}
   src: local('Cantarell Regular'), local('Cantarell-Regular'), url('http://themes.googleusercontent.com/font?kit=V86VyqXbc09Sss3BPsMj16CWcynf_cDxXwCLxiixG1c') format('truetype');
 }
 
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Inconsolata'), url('http://themes.googleusercontent.com/font?kit=BjAYBlHtW3CJxDcjzrnZCJ0EAVxt0G0biEntp43Qt6E') format('truetype');
+}
+
 a:link, a:visited {
   color:#BFEFFF;
   text-decoration:none;
@@ -106,8 +113,21 @@ div#proposals textarea#proposal-notes {
   height:200px;
 }
 
+div#proposals  div.license {
+  width:100%;
+  font-family:Cantarell;
+  font-size:15px;
+  margin-top:15px;
+  margin-bottom:15px;
+}
+div#proposals input.license {
+  float:left;
+  width:20px;
+}
 
-div.proposal-author {
+/*Preview*/
+
+div.speaker- {
   width:100%;
 }
 div.proposal-name {
@@ -205,4 +225,80 @@ img.github-picture {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+}
+
+div.submit {
+  width:100%;
+  text-align:center;
+}
+span.submit-button {
+  background-color: #DCDCDC; 
+  padding: 0px 5px 2px 3px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  border: 2px solid;
+  border-color:#BEBEBE;
+  cursor:pointer;
+  color:#5E5E5E;
+}
+span.submit-hover {
+  background-color: #B3B3B3; 
+  border-color: #DCDCDC;
+}
+div#submit-error {
+  color:#FF7D40;
+  font-size:15px;
+  padding-top:5px;
+}
+
+/*Show Proposal*/
+
+div.talk {
+  padding-left:10%;
+  padding-right:10%;
+  font-family:Cantarell;
+  font-size:20px;
+  color:#E0E0E0;
+}
+div.talk-header {
+  text-align:center;
+}
+div.talk-speaker {
+  width:100%;
+}
+div.talk-title {
+  font-size:45px;
+}
+span.talk-speaker-name {
+  font-size:35px;
+  padding-bottom:5px;
+}
+div.talk-speaker img {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-right:5px;
+}
+
+div.talk-speaker-info {
+  width:100%;
+}
+div.talk-speaker-twitter {
+  float:left;
+  width:50%;
+}
+div.talk-speaker-github {
+  float:left;
+  width:50%;
+}
+div.render-container {
+  text-align:center;
+  padding-bottom:25px;
+}
+blockquote {
+  font-family:Inconsolata;
+}
+div.talk-notes {
+  padding-bottom:15px;
 }
