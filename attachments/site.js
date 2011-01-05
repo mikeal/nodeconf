@@ -333,8 +333,8 @@ app.showProposal = function () {
   shrinkHeader();
   $('div#main').html('');
   request({url:'/api/'+this.params.id}, function (err, resp) {
-    var twitter = resp.twitter
-      , github = resp.github.user
+    var twitter = (resp.twitter) ? resp.twitter : {}
+      , github = (resp.github && resp.github.user) ? resp.github.user : {}
       ;
     
     $('div#main').html(
