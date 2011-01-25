@@ -18,6 +18,12 @@ ddoc.validate_doc_update = function (newDoc, oldDoc, userCtx) {
   } 
 }
 
+ddoc.views = {}
+ddoc.views.proposalsByTimestamp = {}
+ddoc.views.proposalsByTimestamp.map = function (doc) {
+  if (doc.type === 'proposal' && doc.created) emit(doc.created, 1);
+}
+
 couchapp.loadAttachments(ddoc, path.join(__dirname, 'attachments'))
 
 module.exports = ddoc

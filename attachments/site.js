@@ -123,16 +123,21 @@ var proposals =
 var app = {};
 app.index = function () {
   // Change formatting
-  $('div#logo-image').css('width','100%').addClass('logo').removeClass('logo-on-page');
-  $('div#info').removeClass('info-on-page');
+  // $('div#logo-image').css('width','100%').addClass('logo').removeClass('logo-on-page');
+  // $('div#info').removeClass('info-on-page');
   $('div#main').html('')
+  $("span#call-for-proposals").click(function () {
+      window.location = "/#/proposal"
+  })
+  $('div#content').show();
 };
 
 var shrinkHeader = function () {
-  $('div#logo').removeClass('logo').addClass('logo-on-page');
-  $('img.logo-image').css('width', "400px")
-  $('div#info').addClass('info-on-page');
-  $('img#logo-image').addClass('logo-on-page');
+  $("div#content").hide()
+  // $('div#logo').removeClass('logo').addClass('logo-on-page');
+  // $('img.logo-image').css('width', "400px")
+  // $('div#info').addClass('info-on-page');
+  // $('img#logo-image').addClass('logo-on-page');
 }
 
 app.proposal = function () {

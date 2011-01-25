@@ -35,23 +35,37 @@ div.logo {
   padding-top:10%;
 }
 
-div.info {
+/*div.info {
   text-align:center;
   font-size:80px;
   color:#E3E3E3;
   font-family:Reenie Beanie;
+}*/
+
+div#logo {
+  float:left;
+  padding-top:2px;
+  width:45%;
+}
+div#info {
+  float:left;
+  width:15%;
+}
+div.header-space {
+  float:left;
+  width:20%;
 }
 
-div.logo-on-page {
-  float:left;
-  padding-left:25%;
-  padding-top:2px;
-}
 div.info-on-page {
-  font-size:30px;
+  font-size:180%;
   text-align:left;
-  padding-top:25px;
+  padding-top:3%;
   padding-left:5px;
+  color:#E3E3E3;
+  font-family:Reenie Beanie;
+}
+img.info-on-page {
+  width:35%;
 }
 
 div.spacer {
@@ -301,4 +315,49 @@ blockquote {
 }
 div.talk-notes {
   padding-bottom:15px;
+}
+span#call-for-proposals {
+
+/*  border-style:solid;
+  border-width:1px;*/
+  margin-top:35px;
+  
+  font-size:40px;
+  padding: 5px 5px 5px 5px;
+  cursor:pointer;
+}
+div#call-for-proposals {
+   margin-top:35px;
+   font-family:Reenie Beanie;
+   color:#E0E0E0;
+   text-align:center;
+}
+div#deadline {
+  margin-top:10px;
+  text-align:center;
+  font-size:15px;
+  font-family:'Georgia';
+}
+.logo-image {z-index:1; width:100%; height:auto;}
+div#main-speakers {
+  width:100%;
+  text-align:center;
+  margin-top:20px;
+  
+  
+}
+span.sep {
+  width:35px;
+}
+img.gravatar {
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  
+  box-shadow: 0 0 4px #858585;
+  -moz-box-shadow: 0 0 4px #858585;
+  -webkit-box-shadow: 0 0 4px #858585;
+}
+div#main-talk-details {
+  width:100%;
 }

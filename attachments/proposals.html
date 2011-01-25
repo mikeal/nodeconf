@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="nodeconf, node.js, nodejs, node, javascript, conference" />
+    <meta name="description" content="NodeConf. A conference for node.js" />
+    
+    <title>NodeConf 2011</title>
+    <link href="layout.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="jquery-1.4.4.min.js"></script>
+    <script language="javascript" type="text/javascript" src="sammy/sammy.js"></script>
+    <script language="javascript" type="text/javascript" src="md5.js"></script>
+  
+    <style>
+      div#main {
+        font-family:Cantarell;
+        color:white;
+      }
+    
+      div.proposal-row {
+        width:90%;
+        margin-left:5%;
+        margin-right:5%;
+        margin-bottom:20px;
+      }
+      div.prop-section {
+        float:left;
+        margin-right:15px;
+      }
+      div.prop-name {
+        width:150px;
+      }
+      a:link, a:visited {
+        color:white;
+        text-decoration:none;
+      }
+      div.prop-ts {
+        width:120px;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div id="main">
+      
+    </div>
+  </body>
+  <script>
+    var request = function (options, callback) {
+      options.success = function (obj) {
+        callback(null, obj);
+      }
+      options.error = function (err) {
+        if (err) callback(err);
+        else callback(true);
+      }
+      if (options.data && typeof options.data == 'object') {
+        options.data = JSON.stringify(options.data)
+      }
+      if (!options.dataType) options.processData = false;
+      if (!options.dataType) options.contentType = 'application/json';
+      if (!options.dataType) options.dataType = 'json';
+      $.ajax(options)
+    }
+
+    $.expr[":"].exactly = function(obj, index, meta, stack){ 
+      return ($(obj).text() == meta[3])
+    }
+    
+    function prettyDate(time) {
+      if (time.indexOf('.') !== -1) time = time.slice(0, time.indexOf('.'))+'Z'
+    	var date = new Date((time || "").replace(/-/g,"/").replace(/[TZ]/g," ")),
+    	    date = new Date(date.getTime() - (date.getTimezoneOffset() * 1000 * 60))
+      		diff = (((new Date()).getTime() - date.getTime()) / 1000),
+      		day_diff = Math.floor(diff / 86400)
+      		;
+
+      if (day_diff === -1) return "now"
+    	if ( day_diff >= 31) return day_diff + ' days ago';
+    	if ( isNaN(day_diff) || day_diff < 0 || day_diff >= 31 ) return;
+
+    	return day_diff == 0 && (
+    			diff < 60 && "just now" ||
+    			diff < 120 && "1 minute ago" ||
+    			diff < 3600 && Math.floor( diff / 60 ) + " minutes ago" ||
+    			diff < 7200 && "1 hour ago" ||
+    			diff < 86400 && Math.floor( diff / 3600 ) + " hours ago") ||
+    		day_diff == 1 && "Yesterday" ||
+    		day_diff < 7 && day_diff + " days ago" ||
+    		day_diff < 31 && Math.ceil( day_diff / 7 ) + " weeks ago";
+    }
+    
+    request({url:"/_view/proposalsByTimestamp?descending=true&include_docs=true"}, function (e, resp) {
+      var main = $('div#main');
+      resp.rows.forEach(function (row) {
+        main.append(
+          '<div class="proposal-row">' +
+            '<div class="prop-section prop-name">' + row.doc.name + '</div>' +
+            '<div class="prop-section prop-ts">' + prettyDate(row.doc.created) + '</div>' +
+            '<div class="prop-section"><a href="/#/proposal/'+row.id+'">' + row.doc.title + '</a></div>' +
+            
+          '</div>' +
+          '<div class="spacer"></div>'
+        )
+      })
+    })
+  </script>
+</html>
