@@ -20,6 +20,19 @@ html {background-color:#4F4F4F;}
   src: local('Inconsolata'), url('http://themes.googleusercontent.com/font?kit=BjAYBlHtW3CJxDcjzrnZCJ0EAVxt0G0biEntp43Qt6E') format('truetype');
 }
 
+@font-face {
+  font-family: 'Cherry Cream Soda';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Cherry Cream Soda'), local('CherryCreamSoda'), url('http://themes.googleusercontent.com/font?kit=OrD-AUnFcZeeKa6F_c0_W7qBN36jQhVLTmQ9NDizP_4') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Merriweather'), url('http://themes.googleusercontent.com/font?kit=RFda8w1V0eDZheqfcyQ4EInF5uFdDttMLvmWuJdhhgs') format('truetype');
+}
+
 a:link, a:visited {
   color:#BFEFFF;
   text-decoration:none;
@@ -320,14 +333,14 @@ span#call-for-proposals {
 
 /*  border-style:solid;
   border-width:1px;*/
-  margin-top:35px;
+  margin-top:15px;
   
   font-size:40px;
   padding: 5px 5px 5px 5px;
   cursor:pointer;
 }
 div#call-for-proposals {
-   margin-top:35px;
+   margin-top:25px;
    font-family:Reenie Beanie;
    color:#E0E0E0;
    text-align:center;
@@ -336,15 +349,15 @@ div#deadline {
   margin-top:10px;
   text-align:center;
   font-size:15px;
-  font-family:'Georgia';
+  font-family:Merriweather;
+  text-shadow: 1px 1px 1px black;
+  margin-bottom:10px;
 }
 .logo-image {z-index:1; width:100%; height:auto;}
 div#main-speakers {
   width:100%;
   text-align:center;
-  margin-top:20px;
-  
-  
+  margin-top:10px;
 }
 span.sep {
   width:35px;
@@ -360,4 +373,50 @@ img.gravatar {
 }
 div#main-talk-details {
   width:100%;
+}
+
+div#sps-list {
+  margin-top:20px;
+  text-align:center;
+  font-size:25px;
+  font-family:Merriweather;
+  color:#E0E0E0;
+}
+div#sps-list a:link, div#sps-list a:visited {
+  color:#E0E0E0;
+}
+div#two-column {
+  width:100%;
+}
+div#infoz, div#main-section {
+  color:#E0E0E0;
+  font-family:Merriweather;
+  font-size:17px;
+  text-shadow: 1px 1px 1px  #404040;
+  margin-top:20px;
+  margin-left:15%;
+  margin-right:15%;
+  width:70%;
+}
+a:link, a:visited {
+  color:white;
+  text-shadow: 1px 1px 1px #404040;
+}
+
+div#infoz div {
+  margin-bottom:5px;
+}
+
+img.sps-image {
+  height:50px;
+  cursor:pointer;
+}
+img.biglogo {
+  height:150px;
+}
+div#sps-biglogo {
+  text-align:center;
+}
+div#main-section {
+  margin-bottom:80px;
 }

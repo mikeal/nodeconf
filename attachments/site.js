@@ -130,6 +130,10 @@ app.index = function () {
       window.location = "/#/proposal"
   })
   $('div#content').show();
+  $('div#main-section').hide();
+  $('div#sps-biglogo').hide();
+  $('div#main-speakers').show();
+  $('div#info-section').show();
 };
 
 var shrinkHeader = function () {
@@ -404,15 +408,46 @@ app.showProposal = function () {
   
 }
 
+app.showSponsor = function () {
+  console.log("asdf")
+  $('div#info-section').hide();
+  $('div#main-speakers').hide();
+  $('div#main-section')
+    .show()
+    .html(
+      { yammer : '<p><a href="http://www.yammer.com">Yammer</a> (<a href="http://www.yammer.com">www.yammer.com</a>) is the leader in enterprise social networking, providing a secure way for employees to communicate, collaborate, and share information. The basic version of Yammer is free, and customers can pay to upgrade their network to receive additional administrative and security controls, priority customer service and a dedicated customer success manager. More than 100,000 companies and organizations are using our award-winning Software-as-a-Service (SaaS) solution to improve employee productivity and engagement.</p>'
+      
+      , andyet : '<p><a href="http://www.andyet.net">&yet</a> (<a href="http://www.andyet.net">www.andyet.net</a>) makes web software for human people (and have a nearly inappropriate amount of fun doing it). Their team includes established contributors to the web community in XMPP and realtime web technologies, cloud cartography, and Javascript.</p>'
+      
+      }[this.params.name]
+  )
+  $('div#sps-biglogo')
+    .show()
+    .html(
+      { yammer: '<img class="biglogo" src="/img/Yammer.png" />'
+      , andyet: '<img class="biglogo" src="/img/andyet.png">'  
+      }[this.params.name]
+    )
+}
+
 $(function () { 
   app.s = $.sammy(function () {
     // Call for proposals
     this.get("#/proposal/:id", app.showProposal);
     this.get("#/proposal", app.proposal);
     
+    this.get("#/sponsors/:name", app.showSponsor);
+    
     // Index of all databases
     this.get('', app.index);
     this.get("#/", app.index);
   })
+  $(function () {
+    // setup sponsors
+    $('img.sps-image').click(function () {
+      window.location.hash = '#/sponsors/'+this.id;
+    })
+  })
+  
   app.s.run();
 });
