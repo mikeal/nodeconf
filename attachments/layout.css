@@ -34,7 +34,7 @@ html {background-color:#4F4F4F;}
 }
 
 a:link, a:visited {
-  color:#BFEFFF;
+  color:#B6CA5D;
   text-decoration:none;
 }
 
@@ -183,8 +183,8 @@ div.proposal-short {
 }
 
 div.proposal-desc {
-  font-size:20px;
-  padding-top:18px;
+/*  font-size:20px;
+*/  padding-top:18px;
 }
 
 div#speaker-info {
@@ -370,6 +370,8 @@ img.gravatar {
   box-shadow: 0 0 4px #858585;
   -moz-box-shadow: 0 0 4px #858585;
   -webkit-box-shadow: 0 0 4px #858585;
+  height:100px;
+  width:100px;
 }
 div#main-talk-details {
   width:100%;
@@ -380,9 +382,6 @@ div#sps-list {
   text-align:center;
   font-size:25px;
   font-family:Merriweather;
-  color:#E0E0E0;
-}
-div#sps-list a:link, div#sps-list a:visited {
   color:#E0E0E0;
 }
 div#two-column {
@@ -399,7 +398,7 @@ div#infoz, div#main-section {
   width:70%;
 }
 a:link, a:visited {
-  color:white;
+  color:#B6CA5D;
   text-shadow: 1px 1px 1px #404040;
 }
 
@@ -412,11 +411,20 @@ img.sps-image {
   cursor:pointer;
 }
 img.biglogo {
-  height:150px;
+  height:50px;
 }
 div#sps-biglogo {
   text-align:center;
 }
 div#main-section {
   margin-bottom:80px;
+}
+span.talkhook {
+  cursor:pointer;
+}
+h3 {
+  text-align:center;
+}
+h2.top-talk-title {
+  text-align:center;
 }

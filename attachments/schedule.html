@@ -1,0 +1,646 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="nodeconf, node.js, nodejs, node, javascript, conference" />
+    <meta name="description" content="NodeConf. A conference for node.js" />
+    <meta name="google-site-verification" content="vK4qlpmiiaSkw7rN2Y7YX2cCOvDTFWfRBofz9rCIehU" />
+    
+    <title>NodeConf 2011</title>
+    <link href="layout.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="jquery-1.4.4.min.js"></script>
+    <script language="javascript" type="text/javascript" src="sammy/sammy.js"></script>
+    <script language="javascript" type="text/javascript" src="md5.js"></script>
+    <script language="javascript" type="text/javascript" src="site.js"></script>
+  
+    <style>
+      @font-face {
+        font-family: 'Cantarell';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Cantarell Regular'), local('Cantarell-Regular'), url('http://themes.googleusercontent.com/font?kit=V86VyqXbc09Sss3BPsMj16CWcynf_cDxXwCLxiixG1c') format('truetype');
+      }
+      
+      @font-face {
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Merriweather'), url('http://themes.googleusercontent.com/font?kit=RFda8w1V0eDZheqfcyQ4EInF5uFdDttMLvmWuJdhhgs') format('truetype');
+      }
+      
+      body {
+        font-family:Merriweather;
+        color:#E0E0E0;
+        font-size:20px;
+        font-weight
+      }
+            
+      a:link, a:visited {
+        color:#FFFFFF;
+        text-decoration:none;
+      }    
+      div.center-logo {
+        text-align:center;
+      }
+      span.ev-logo {
+        margin-left:5px;
+      }
+      img.ev-logo {
+        max-width:100%;
+        max-height:25px;
+        background-color:white;
+        padding:10px;
+        border: solid 1px #333;
+        border-radius: 3px;
+      }
+      
+      img.o-logo {
+         background-color:white;
+         padding:2px;
+         border: solid 1px #333;
+         border-radius: 2px;
+         max-height:15px;
+      }
+      
+      div.event-container {
+        float:left;
+        margin-left:10px;
+      }
+      
+      div.talk-container {
+        width:80%;
+        float:left;
+      }
+      
+      div.center-event {
+        margin-top:30px;
+        margin-left:10%;
+/*        text-align:right;
+*/      }
+      
+      div.talk-event {
+        margin-left:10%;
+        margin-right:2%;
+/*        text-align:right;
+*/        margin-bottom:15px;
+      }
+      
+      
+
+      div.ev-logo {
+        width:150px;
+        float:left;
+        text-align:right;
+        padding-right:20px;
+      }
+      
+      span.ev-logo {
+        margin-right:10px;
+      }
+      
+      div.event-time-a {
+        float:left;
+        padding-left:10px;
+        width:20px;
+        padding-right:5px;
+        text-align:right;
+      }
+      
+      div.schedule-date {
+        text-align:center;
+        font-size:20px;
+        margin-top:30px;
+        margin-bottom:15px;
+      }
+      div.main-schedule {
+        width:100%;
+      }
+      div.track-a {
+        float:left;
+        width:48%;
+      }
+      div.track-b {
+        float:left;
+        width:50%;
+      }
+      h2 {
+        text-align:center;
+        font-size:25px;
+      }
+      hr.full-line {
+        width:80%;
+        text-align:center;
+        height:1px;
+        border:0px;
+        background-color:#474747;
+        color:#474747;
+        -moz-box-shadow: 1px 1px 1px #5E5E5E;
+        -webkit-box-shadow: 1px 1px 1px #5E5E5E;
+        box-shadow: 1px 1px 1px #5E5E5E;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="center-logo"><a href="/"><img style="height:100px" src="node_0002_NODECONF2.png" /></a></div>
+    
+    <div id="schedule">
+      
+      <div class="schedule-date">Wednesday May 4th 2011</div>
+      
+      <hr class="full-line" style="margin-top:25px;" />
+      
+      <div class="center-event">
+        <div class="ev-logo"><img class="ev-logo" src="/img/Basho.png" /></div>
+        <div class="event-container">
+          <div class="event-title">NodeCommit (invite only)</div>
+          <div class="event-description">
+            all day
+          </div>
+        </div>
+        
+        <div class="spacer"></div>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      
+      <hr class="full-line"  style="margin-top:25px;"/>
+            
+      <div class="center-event">
+        <div class="ev-logo"><img class="ev-logo" src="/img/HPwebOS-black.png" /></div>
+        <div class="event-container">
+          <div class="event-title">Opening Party</div>
+          <div class="event-description">
+            8pm @ Sunken Ballroom in the <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Portland+Art+Museum,+Portland,+OR&aq=0&sll=35.675147,-95.712891&sspn=33.511697,54.140625&ie=UTF8&hq=Portland+Art+Museum,+Portland,+OR&hnear=Portland+Art+Museum,+930+SW+Salmon+St,+Portland,+Oregon+97205&z=14">Portland Art Museum</a>
+          </div>
+        </div>
+        
+        <div class="spacer"></div>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      
+      <hr class="full-line"  style="margin-top:25px;"/>
+      
+      <div class="schedule-date">Thursday May 5th 2011</div>
+      
+      
+      <div style="text-align:center;margin-bottom:10px">NodeConf 2011</div>
+      <div style="text-align:center;margin-bottom:15px">8:30am Registration @ <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1315+NW+Overton,+Portland,+OR+97209&aq=&sll=45.462779,-122.710762&sspn=0.113897,0.211487&ie=UTF8&hq=&hnear=1315+NW+Overton+St,+Portland,+Oregon+97209&z=16">PureSpace</a></div>
+      <hr class="full-line" />
+      <div class="center-event">
+        <div class="ev-logo"><img class="ev-logo" src="/img/Yammer.png" /></div>
+        <div class="event-container">
+          <div class="event-title">9am</div>
+          <div class="event-description">
+            Double Bacon Breakfast
+          </div>
+        </div>
+        
+        <div class="spacer"></div>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      
+      <hr class="full-line" style="margin-top:25px;" />
+      
+      <div class="center-event">
+        <div class="ev-logo"><img class="ev-logo" src="/img/uber.png" /></div>
+        <div class="event-container">
+          <div class="event-title">all day</div>
+          <div class="event-description">
+            Upstairs Lounge
+          </div>
+        </div>
+        
+        <div class="spacer"></div>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      
+      <hr class="full-line"  style="margin-top:25px;"/>
+      
+      <div class="center-event">
+        <div class="ev-logo"><img class="ev-logo" src="/img/bloomberg.png" /></div>
+        <div class="event-container">
+          <div class="event-title">all day</div>
+          <div class="event-description">
+            Espresso Cart
+          </div>
+        </div>
+        
+        <div class="spacer"></div>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      
+      <hr class="full-line"  style="margin-top:25px;margin-bottom:15px;" />
+      
+      <div style="text-align:center;margin-bottom:15px">Ryan Dahl Keynote @ 10am</div>
+      
+      <!-- <div class="center-event">
+        <div class="event-container">
+          <div class="event-title">Ryan Dahl</div>
+          <div class="event-description">Keynote</div>
+        </div>
+        <div class="event-time-a">10am</div>
+        <div class="spacer"></div>
+        </div>
+      </div> -->
+      
+      <hr class="full-line" />
+      
+      <div class="main-schedule">
+        <div class="track-a">
+          <h2>Track A</h2>
+          
+          <div class="talk-event">
+            <div class="talk-container">
+              <div class="event-title">Elijah Insua</div>
+              <div class="event-description">Why node has a DOM</div>
+            </div>
+            <div class="event-time-a">10:30am</div>
+            <div class="spacer"></div>
+          </div>    
+        </div>
+        
+        <div class="track-b">
+          <h2>Track B<span class="ev-logo"><img class="o-logo" src="/img/Rackspace.png" /></span></h2>
+                
+          <div class="talk-event">
+            <div class="talk-container">
+              <div class="event-title">Curtis Chambers</div>
+              <div class="event-description">Being Uber with Node</div>
+            </div>
+            <div class="spacer"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="spacer"></div>
+      
+      <hr class="full-line"  style="margin-top:10px;" />
+      
+      <div class="center-event">
+        <div class="ev-logo"><img class="ev-logo" src="/img/andyet.png" /></div>
+        
+        <div class="event-container">
+          <div class="event-title">11am</div>
+          <div class="event-description">
+            15 Minute Coffee Break
+          </div>
+        </div>
+        <div class="spacer"></div>
+      </div>
+      <div class="spacer"></div>
+      
+      <hr class="full-line"  style="margin-top:25px;" />
+      
+      <div class="spacer"></div>
+      
+      <div class="main-schedule">
+        <div class="track-a">
+          
+          <h2>Track A</h2>
+          
+          <div class="talk-event">
+            <div class="talk-container">
+              <div class="event-title">Matt Eernisse</div>
+              <div class="event-description">Lessons Learned in Production</div>
+            </div>
+            <div class="event-time-a">11:15am</div>
+            <div class="spacer"></div>
+          </div>
+          
+          <div class="talk-event">
+            <div class="talk-container">
+              <div class="event-title">Guillermo Rauch</div>
+              <div class="event-description">socket.io</div>
+            </div>
+            <div class="event-time-a">11:30am</div>
+            <div class="spacer"></div>
+          </div>
+
+        </div>
+        
+        <div class="track-b">
+          <h2>Track B<span class="ev-logo"><img class="o-logo" src="/img/Voxer.png" /></span></h2>
+          
+          <div class="talk-event">
+            <div class="talk-container">
+              <div class="event-title">Visnu Pitiyanuvath</div>
+              <div class="event-description">How To Win at NodeKnockout</div>
+            </div>
+            <div class="spacer"></div>
+          </div>
+
+          <div class="talk-event">
+            <div class="talk-container">
+              <div class="event-title">Marco Rogers</div>
+              <div class="event-description">Developing C/C++ Bindings for Node</div>
+            </div>
+            <div class="spacer"></div>
+          </div>
+        </div>
+        
+      </div>  
+      <div class="spacer"></div>
+      <hr class="full-line" />    
+      <div class="spacer"></div>
+      <div class="center-event">
+        <div class="ev-logo"><img class="ev-logo" src="/img/ZapposFamily.png" /></div>
+        <div class="event-container">
+          <div class="event-title">noon</div>
+          <div class="event-description">
+            Tuscan Lunch
+          </div>
+        </div>
+        
+        <div class="spacer"></div>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      
+      <hr class="full-line"  style="margin-top:25px;margin-bottom:15px;"/>
+      
+      <h2>Lunch Track<span class="ev-logo"><img class="o-logo" src="/img/Google.png" /></span></h2>
+      
+      <div style="text-align:center;margin-bottom:5px">Chris Williams @ 12:15pm</div>
+      <div style="text-align:center;margin-bottom:15px">Fuck Cyberspace, We'll Do It Live!</div>
+      
+      <div style="text-align:center;margin-bottom:5px">Marak Squires @ 12:30pm</div>
+      <div style="text-align:center;margin-bottom:15px">Every node.js module evar!</div>
+      
+      <!-- <div class="center-event">
+        <div class="talk-container">
+          <div class="event-title">Chris Williams</div>
+          <div class="event-description">
+            Fuck Cyberspace, We'll Do It Live!
+          </div>
+        </div>
+        <div class="event-time-a">12:15pm</div>
+        <div class="spacer"></div>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      
+      <div class="center-event" style="margin-top:10px">
+        <div class="talk-container">
+          <div class="event-title">Marak Squires</div>
+          <div class="event-description">
+            Every node.js module evar!
+          </div>
+        </div>
+        <div class="event-time-a">12:30pm</div>
+        <div class="spacer"></div>
+        </div>
+      </div>
+      <div class="spacer"></div> -->
+      
+      <hr class="full-line" />    
+      
+    </div>
+      
+    <div class="main-schedule">
+      <div class="track-a">
+        <h2>Track A</h2>
+        
+        <div class="talk-event">
+          <div class="talk-container">
+            <div class="event-title">Kevin Hague</div>
+            <div class="event-description">Building a portable presentation system using webOS and Node.js</div>
+          </div>
+          <div class="event-time-a">12:45pm</div>
+          <div class="spacer"></div>
+        </div>
+        
+        <div class="talk-event">
+          <div class="talk-container">
+            <div class="event-title">Mozilla Person</div>
+            <div class="event-description">Secret Talk</div>
+          </div>
+          <div class="event-time-a">1:15pm</div>
+          <div class="spacer"></div>
+        </div>
+        
+        <div class="talk-event">
+          <div class="talk-container">
+            <div class="event-title">Isaac Schlueter</div>
+            <div class="event-description">How npm Works</div>
+          </div>
+          <div class="event-time-a">1:45pm</div>
+          <div class="spacer"></div>
+        </div>
+        
+        <div class="talk-event">
+          <div class="talk-container">
+            <div class="event-title">Matt Ranney</div>
+            <div class="event-description">Understanding Node Performance</div>
+          </div>
+          <div class="event-time-a">2:15pm</div>
+          <div class="spacer"></div>
+        </div>
+        
+      </div>
+      
+      <div class="track-b">
+        <h2>Track B<span class="ev-logo"><img class="o-logo" src="/img/nodejitsu-black.png" /></span></h2>
+        
+        <div class="talk-event">
+          <div class="talk-container">
+            <div class="event-title">Henrik Joreteg</div>
+            <div class="event-description">Building Realtime Singlepage Apps</div>
+            <br/>
+          </div>
+          <div class="spacer"></div>
+        </div>
+      
+        <div class="talk-event">
+          <div class="talk-container">
+            <div class="event-title">Paul Querna</div>
+            <div class="event-description">Deployment with Cast</div>
+          </div>
+          <div class="spacer"></div>
+        </div>
+      
+        <div class="talk-event">
+          <div class="talk-container">
+            <div class="event-title">Robert Kieffer</div>
+            <div class="event-description">Node @ Facebook</div>
+          </div>
+          <div class="spacer"></div>
+        </div>
+      
+        <div class="talk-event">
+          <div class="talk-container">
+            <div class="event-title">John Schulz</div>
+            <div class="event-description">Canvas on Node</div>
+          </div>
+          <div class="spacer"></div>
+        </div>
+      
+      </div>
+      
+    </div>
+    <div class="spacer"></div>
+    
+    <hr class="full-line"  style="margin-top:10px;"/>
+    
+    <div class="center-event">
+      <div class="ev-logo"><img class="ev-logo" src="/img/Facebook.png" /></div>
+      <div class="event-container">
+        <div class="event-title">2:45</div>
+        <div class="event-description">
+           15 Minute Coffee Break
+        </div>
+      </div>
+      
+      <div class="spacer"></div>
+    </div>
+    <div class="spacer"></div>
+    
+    <hr class="full-line"  style="margin-top:25px;" />
+    
+    <div class="main-schedule">
+      <div class="track-a">
+        <h2>Track A</h2>
+        
+        <div class="talk-event">
+          <div class="talk-container">
+            <div class="event-title">Felix Geisendörfer</div>
+            <div class="event-description">How to Test Asynchronous Code</div>
+          </div>
+          <div class="event-time-a">3pm</div>
+          <div class="spacer"></div>
+        </div>
+        
+        <div class="talk-event">
+          <div class="talk-container">
+            <div class="event-title">Charlie Robbins</div>
+            <div class="event-description">Running node.js in Production</div>
+          </div>
+          <div class="event-time-a">3:30pm</div>
+          <div class="spacer"></div>
+        </div>
+        <br/>
+        <div class="talk-event">
+          <div class="talk-container">
+            <div class="event-title">Sean Cribbs</div>
+            <div class="event-description">riak.js</div>
+          </div>
+          <div class="event-time-a">4pm</div>
+          <div class="spacer"></div>
+        </div>
+        
+        <div class="talk-event">
+          <div class="talk-container">
+            <div class="event-title">Tim Caswell</div>
+            <div class="event-description">Hackers Asylum</div>
+          </div>
+          <div class="event-time-a">4:30pm</div>
+          <div class="spacer"></div>
+        </div>
+        
+      </div>
+      </div>
+      
+      <div class="track-b">
+        <h2>Track B</h2>
+        
+        <div class="talk-event">
+          <div class="talk-container">
+            <div class="event-title">Tyler Gillies</div>
+            <div class="event-description">Dirty Little Hacks</div>
+          </div>
+          <div class="spacer"></div>
+        </div>
+      
+        <div class="talk-event">
+          <div class="talk-container">
+            <div class="event-title">Ryan Day</div>
+            <div class="event-description">Bacon Themed QRCodes for Hungry Devices</div>
+          </div>
+          <div class="spacer"></div>
+        </div>
+        
+        <div class="talk-event">
+          <div class="talk-container">
+            <div class="event-title">James Halliday</div>
+            <div class="event-description">Freestyle RPC for Node</div>
+          </div>
+          <div class="spacer"></div>
+        </div>
+      
+        <div class="talk-event">
+          <div class="talk-container">
+            <div class="event-title">Peter Hallam and Alex Russell</div>
+            <div class="event-description">The Future of JS and You</div>
+          </div>
+          <div class="spacer"></div>
+        </div>
+        
+      
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <hr class="full-line" style="margin-top:10px;margin-bottom:15px;"/>
+    <div class="spacer"></div>
+    
+    <div style="text-align:center;margin-bottom:5px">NodeCommit Panel @ 5pm</div>
+    <div style="text-align:center;margin-bottom:15px">A live panel of selected node contributors. <a href="http://www.google.com/moderator/#15/e=6f674&t=6f674.40">Submit your questions here.</a></div>
+    
+    <hr class="full-line" style="margin-top:10px;margin-bottom:15px;"/>
+    
+    <div style="text-align:center;margin-bottom:5px">Mikeal Rogers @ 6pm</div>
+    <div style="text-align:center;margin-bottom:15px">Closing Remarks</div>
+    
+    <!-- <div class="center-event">
+      <div class="talk-container">
+        <div class="event-title">Mikeal Rogers</div>
+        <div class="event-description">
+          Closing Remarks
+        </div>
+      </div>
+      <div class="event-time-a">6pm</div>
+      <div class="spacer"></div>
+      </div>
+    </div>
+    <div class="spacer"></div> -->
+    
+    <hr class="full-line" />
+    
+    <div class="center-event">
+      <div class="ev-logo"><img class="ev-logo" src="/img/mozilla.png" /></div>
+      <div class="event-container">
+        <div class="event-title">Closing Party</div>
+        <div class="event-description">
+          8pm @ The <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=326+Southwest+Broadway,+Portland,+OR+&aq=&sll=45.521789,-122.678294&sspn=0.000889,0.001652&ie=UTF8&hq=&hnear=326+SW+Broadway,+Portland,+Oregon+97204&z=16">Treasury</a>
+        </div>
+      </div>
+      
+      <div class="spacer"></div>
+      </div>
+    </div>
+    <div class="spacer" style="padding-bottom:40px"/>
+      
+    </div>
+    
+    <script type="text/javascript"> 
+    	var analyticsFileTypes = [''];
+    	var analyticsEventTracking = 'enabled';
+    </script> 
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3515839-9']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </body>
+</html>
