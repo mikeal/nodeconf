@@ -42,14 +42,14 @@ h1 {
 
 h2 {
   font-weight: bolder;
-  font-size: 52px;
+  font-size: 30px;
   margin: 0 0 44px;
   font-family: "Arial Black", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
 }
 
 h3 {
   font-size: 24px;
-  font-weight: bolder;  
+  font-weight: normal;  
   margin: 0 0 28px;
   line-height: 1.2em;
 }
@@ -58,10 +58,17 @@ h3.actions {
   margin-top: 44px;
 }
 
+h3.info-spec {
+  font-weight:bolder;
+}
+
 a#register, a#more-info {
   font-size: 28px;
   font-weight: bolder;  
   text-decoration: underline;
+}
+a, a:visited {
+  color: #fbaa19;
 }
 
 a#register {
