@@ -1,0 +1,235 @@
+/* Style + Ease = ST.EEZE.us Front End Starter-Kit v 0.2
+   Author: Wil Everts - http://cousinwil.com - @cousinwil
+  
+   File: Reset, clearfix, & other goodies consolodated into one GET.
+  
+  
+                               (80 chars, the suggested maximum line length)--->
+  --------------------------------------------------------------------------- */
+
+/* html5doctor.com Reset Stylesheet 
+   v1.6
+   Last Updated: 2010-08-18
+   Author: Richard Clark - http://richclarkdesign.com 
+   Twitter: @rich_clark
+   
+   Rememeber to check for updates at html5doctor.com, just replace from below
+   this line to just above the "/* St.eeze add-ons" marker (line 119)  
+  --------------------------------------------------------------------------- */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000; 
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted inherit;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;   
+  border-top:1px solid #cccccc;
+  margin:1em auto;
+  padding:0;
+  width: 95%;
+}
+
+input, select {
+  vertical-align:middle;
+}
+
+/* St.eeze add-ons ---------------------------------------------------------- */
+ 
+ul li, ol li {
+  list-style: none;
+}
+ 
+/* Browser Fix - clears out the javascript-animation-induced text flicker
+  --------------------------------------------------------------------------- */
+
+body {
+  opacity: 0.99999; 
+  -moz-opacity: 0.99999; 
+  -khtml-opacity: 0.99999; 
+  filter: alpha(opacity=99);
+}
+
+/* Clearfix CSS
+
+   The .floatcontainer css is Tony Aslett's original 2004 version, while
+   .clearfix has a couple other bits I've picked up along the way, with ie 
+       fixes
+  --------------------------------------------------------------------------- */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+.clear-fix {
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+html.ie .clearfix {
+  zoom: 1;  
+  display: block;
+}
+
+* html.ie .clearfix {
+  height: 1%;
+}
+
+/* Helpful Reusables - CUSTOMIZE TO FIT YOUR NEEDS
+  --------------------------------------------------------------------------- */
+
+/* div.relative is super-useful sets everything inside's absolute position to 
+       0. You can then use bottom or top, left or right & even use negative 
+       values all relative to the containing div... Far fewer js repositions. */
+div.relative { 
+  position: relative;
+}
+
+/* .round doesn't work in ie, but you can use a js plugin to detect ie and 
+       hook onto this class and round it for you there or just let 'em deal   */
+.border-radius, .border-radius-4 { 
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.border-radius-8 { 
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+/* .shadow places a nice drop shadow around your element                      */
+.box-shadow, .box-shadow-6 {
+  -moz-box-shadow: 0px 0px 6px #0A0A0A;
+  -webkit-box-shadow: 0px 0px 6px #0A0A0A;
+  box-shadow: 0px 0px 6px #0A0A0A;
+}
+
+.box-shadow-8-1 {
+  -moz-box-shadow: 0px 0px 8px 1px #0A0A0A;
+  -webkit-box-shadow: 0px 0px 8px 1px #0A0A0A;
+  box-shadow: 0px 0px 8px 1px #0A0A0A;
+}
+
+/* .offset is useful in bringing background image text into the page for 
+       screen readers and non-css browsers (like google's spider bot) - it's 
+       also better than text-offset because when clicked it doesn't create a 
+       dotted outline going offscreen.                                        */
+.offset {
+  display: none;
+}
+
+/* for those elements with click events attached via js                       */
+.link { 
+  cursor: pointer;
+}
+
+small, .small {
+  font-size: .8em;
+}
+
+.no-marg {
+  margin: 0;
+}
+
+.no-padd {
+  padding: 0;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}

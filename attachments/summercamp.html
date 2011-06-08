@@ -1,73 +1,62 @@
-<!doctype html> 
-<head> 
-  <script src="jquery.min.js" type="text/javascript"></script> 
-  <title>NodeConf SummerCamp</title>
-  <style>
-    @font-face {
-      font-family: "Ostrich";
-      src: url('fonts/ostrich-regular.ttf') format("truetype"); }
+<!doctype html>
+<!--[if IE 6]><![endif]-->  
+<!--[if lt IE 8]> <html class="ie" lang="en"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  
+  <meta charset="utf-8">
 
-    @font-face {
-      font-family: "OstrichBlack";
-      src: url('fonts/ostrich-black.ttf') format("truetype"); }  
+  <title></title>
+ 
+  <link rel="stylesheet" href="base.css" media="all" />
+  <link rel="stylesheet" href="camp.css" media="all" />
 
-    #wrapper {width: auto; height: 100%; padding:2em; background-color:#EBE9E8;}
-    #spinner {position: relative; top: 1px; right: 4px;}
-    body{overflow: hidden; margin:0px 0 0; background-color:#EBE9E8;}
-    a{color:#3f8fba;text-decoration:none;}
-    a:hover{color:#3f8fba;text-decoration:underline;}
-    p{word-wrap:break-word;margin:10px 0 0;}
-    h1,h2,h3,h4,h5{color:#444;position:relative;font-weight:700;}
-    h4{margin-bottom:5px;}
-    ol,ul,li{list-style:none;}
-    form{position:relative;}
-    form input,form textarea,form label{font-size:auto; overflow: hidden}
-    h1.title{float: left;-x-system-font:none;text-align:center;color:#161616;font-family:"Ostrich", Helvetica,Arial,sans-serif;font-size:120px;font-style:normal;font-variant:normal;font-weight:400;line-height:120px;text-shadow:1px 1px 0 #FDFDFD;position:relative;top:-7px;margin:0;}
-    h1.title.bold {font-family: "OstrichBlack"; text-shadow: 0 6px 0 #fefefe; font-size: 110px}
-    .avatar{width:50px;height:50px;}
-    .credentials {display: none}
-    input:not([type='submit']),textarea{font-family:"Arial", "Helvetica", sans-serif;font-size:14px;display:block;width:66%;border:1px solid #ccc;height:auto;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;padding:0.3em;}
-    input[type='checkbox']{width:auto;}
-    .submit_block{text-align:right;}
-    form p{position:relative;margin:0;padding:0;}
-    form p.checkbox_select{width:75%;}
-    form p.checkbox_select label{left:20px;top:3px;}
-    form p.checkbox_select img{position:relative;top:6px;}
-    label{font-weight:400;color:#999;position:absolute;top:3px;left:0.48em;text-shadow:0 1px 1px #eee;}
-    #sourceContainer {margin: 0px 0px 5px 0px}
-    #container{padding-bottom:20px  ;display:inline-block;}
-    #container form input,#container form label{font-size:21px;display:inline;}
-    #container form label{top:13px;text-shadow:0 1px 1px #ccc; margin: 0px 0px 0px 7px}
-    #container form input[type='text'],#container form input[type='password']{box-shadow:0px 3px 1px #5E5654, 0 0 0 #888;}
-    #container form .short{width:180px;max-width:180px;}
-    #container form .long{width:383px;max-width:383px;}
-    #container .url_container{width:403px;right:1px;}
-    #container form p{display:inline-block;position:relative;width:350px;}
-    #container form p:last-child{margin-left:3px;}
-    #container form p span.pod_location{color:#888;}
-    #container form p.submit{top:8px;}
-    #container form p.submit a{width:auto;position:relative;top:0;display:block;color:#666;margin-bottom:10px;}
-    .hidden,input[type='hidden']{display:none;}
-    a.button span.icon.loading { background-image: url(loader.gif); }
-    #container {
-      color:#161616;
-      font-family:"Ostrich", Helvetica,Arial,sans-serif;
-      text-shadow:1px 1px 0 #FDFDFD;
-      font-size:50px;
-      font-style:normal;
-      font-variant:normal;
-      font-weight:400;
-    }
-  </style>
-</head> 
-<body>
-  <div id="wrapper">
-    <h1 class="title">NodeConf</h1><h1 class="title bold">SummerCamp</h1>
-    <div id='container'>
-      <div class="dates">September 5th-7th, 2011</div>
-      <div class="location">Walker Creek Ranch, California</div>
+  <!--[if lte IE 8]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+  <![endif]-->   
+
+</head>
+<body>    
+  
+  <div id="contents">
+    <h1><span class="offset">NodeConf SummerCamp 2011 at Walker Creek Ranch, California</span></h1>
+    
+    <div id="camp-teaser" class="clearfix">
+    
+      <div class="left">
+        <h2>September 5-7, 2011</h2>
+        <h3>NodeConf SummerCamp is an unconference held at the Walker Creek Ranch in California.</h3> 
+        <h3>Developers of all skill levels are invited to discuss, learn, and build a stronger community.</h3>
+        <h3 class="actions"><a id="register">Register</a> or <a id="more-info">Learn More</a></h3>
+      </div>
+      <div class="right relative">
+        <h2 style="marin: 0;">Ticket Includes:</h2>
+        <ul id="ticket-includes" class="clearfix">
+          <li><img src="img/summer/bus-icon.png"></li>
+          <li><img src="img/summer/bed-icon.png"></li>
+          <li><img src="img/summer/meals-icon.png"></li>
+          <li><img src="img/summer/beer-icon.png"></li>
+        </ul>
+      </div>
+    
     </div>
+    
+    <div id="camp-info">
+    
+      <h2>NodeConf SummerCamp Info:</h2>
+    
+      <p>NodeConf SummerCamp is an unconference held at Walker Creek Ranch. Developers of all skill levels are invited to discuss, learn, and build a stronger community. The only requirement is a healthy enthusiasm for non-blocking server side JavaScript and maybe an abnormal obsession with Ryan Dahl.</p>
+
+      <p>The day will be filled with concurrent unconf style discussions and a few short formal talks. The nights will be full of games and beers around the campfire. And the mornings will be full of breakfast, coffee and mimosas.</p>
+
+      <p>Those that purchase from the initial lot of tickets are free to bring their family at no additional cost. Because of differences in rooms between the two ticket lots the second lot of tickets sold will be for rooms that don't easily accommodate couples and children so if you want to bring your family make sure you get in on the first lot sold.</p>
+    
+    </div>
+        
   </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
   <script type="text/javascript"> 
   	var analyticsFileTypes = [''];
   	var analyticsEventTracking = 'enabled';
@@ -85,5 +74,7 @@
     })();
 
   </script>
+  
 </body>
+<!-- we built this city on rock and roll. - @cousinwil -->
 </html>
