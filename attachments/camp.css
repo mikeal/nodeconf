@@ -16,9 +16,11 @@ body{
   text-align: center;
 }
 
-div#contents {
-  padding: 24px 0 0;
-  width: 100%;
+p {
+  font-size: 18px;
+  margin-bottom: 24px;
+  font-weight: bolder;
+  line-height: 1.3em;
 }
 
 h1 {
@@ -27,6 +29,65 @@ h1 {
   height: 180px;
   width: 1100px;
   margin: 0 auto 14px;
+}
+
+h2 {
+  font-weight: bolder;
+  font-size: 48px;
+  margin: 0 0 44px;
+  font-family: "Arial Black", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+
+#camp-info h2 {
+  font-size: 40px;
+  color: #60cae5;
+  margin-bottom: 24px;
+}
+
+#footer h2 {
+  font-size: 40px;
+  color: #d366a7;
+  margin-bottom: 24px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: normal;  
+  margin: 0 0 24px;
+  line-height: 1.2em;
+}
+
+h3.actions {
+  margin-top: 44px;
+  font-weight: bolder;
+}
+
+#camp-info h3 {
+  font-weight: bolder;
+  font-family: "Arial Black", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+
+h3.info-spec {
+  font-weight:bolder;
+}
+
+a#register, a#more-info {
+  font-size: 28px;
+  font-weight: bolder;  
+  text-decoration: underline;
+}
+
+a, a:visited {
+  color: #fbaa19;
+}
+
+a#more-info {
+  color: #fdee19;
+}
+
+div#contents {
+  padding: 5px 0 0;
+  width: 100%;
 }
 
 #camp-teaser {
@@ -40,45 +101,6 @@ h1 {
   padding: 20px 9px;
 }
 
-h2 {
-  font-weight: bolder;
-  font-size: 30px;
-  margin: 0 0 44px;
-  font-family: "Arial Black", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
-}
-
-h3 {
-  font-size: 24px;
-  font-weight: normal;  
-  margin: 0 0 28px;
-  line-height: 1.2em;
-}
-
-h3.actions {
-  margin-top: 44px;
-}
-
-h3.info-spec {
-  font-weight:bolder;
-}
-
-a#register, a#more-info {
-  font-size: 28px;
-  font-weight: bolder;  
-  text-decoration: underline;
-}
-a, a:visited {
-  color: #fbaa19;
-}
-
-a#register {
-  color: #fbaa19;
-}
-
-a#more-info {
-  color: #fdee19;
-}
-
 #camp-teaser .right {
   width: 560px;
   margin-top: 16px;
@@ -88,8 +110,9 @@ a#more-info {
   font-size: 28px;
   position: absolute;
   z-index: 100;
-  top: 10px;
+  top: 5px;
   left: 18px;
+  margin: 0;
 }
 
 ul#ticket-includes {
@@ -104,20 +127,45 @@ ul#ticket-includes li {
 #camp-info {
   clear: both;
   text-align: left;
-  width: 980px;
-  margin: 160px auto 0;
+  width: 990px;
+  margin: 130px auto 0;
 }
 
-#camp-info h2 {
-  font-size: 40px;
-  color: #60cae5;
-  margin-bottom: 24px;
-  font-weight: bolder;
+ul#walker-creek-pics {
+  margin-bottom: 10px;
 }
 
-#camp-info p {
-  font-size: 20px;
-  margin-bottom: 24px;
-  font-weight: bolder;
-  line-height: 1.3em;
+ul#walker-creek-pics li {
+  float: left;
+  margin: 10px 0;
+  border: 6px solid #fff;
+  height: 225px;
+  width: 300px;
+  overflow: hidden;
+}
+
+ul#walker-creek-pics li.middle {
+  margin: 10px 20px;
+}
+
+
+#footer {
+  width: 100%;
+  margin-top: 60px;
+  background-color: #3b4f13;  
+  position: relative;
+  padding-top: 60px;
+}
+
+#footer .contents {
+  width: 1000px;
+  padding: 100px;
+  background-image: url(img/summer/bg-cave.jpg);
+  background-repeat: no-repeat;
+  min-height: 700px;  
+  margin: 0 auto;
+}
+
+#footer .actions {
+  margin-top: 0;
 }

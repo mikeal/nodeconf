@@ -2,8 +2,6 @@
    Author: Wil Everts - http://cousinwil.com - @cousinwil
   
    File: Reset, clearfix, & other goodies consolodated into one GET.
-  
-  
                                (80 chars, the suggested maximum line length)--->
   --------------------------------------------------------------------------- */
 
@@ -129,77 +127,8 @@ body {
   filter: alpha(opacity=99);
 }
 
-/* Clearfix CSS
-
-   The .floatcontainer css is Tony Aslett's original 2004 version, while
-   .clearfix has a couple other bits I've picked up along the way, with ie 
-       fixes
-  --------------------------------------------------------------------------- */
-
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
-
-html[xmlns] .clearfix {
-  display: block;
-}
-
-.clear-fix {
-  clear: both;
-  height: 0;
-  visibility: hidden;
-}
-
-html.ie .clearfix {
-  zoom: 1;  
-  display: block;
-}
-
-* html.ie .clearfix {
-  height: 1%;
-}
-
 /* Helpful Reusables - CUSTOMIZE TO FIT YOUR NEEDS
   --------------------------------------------------------------------------- */
-
-/* div.relative is super-useful sets everything inside's absolute position to 
-       0. You can then use bottom or top, left or right & even use negative 
-       values all relative to the containing div... Far fewer js repositions. */
-div.relative { 
-  position: relative;
-}
-
-/* .round doesn't work in ie, but you can use a js plugin to detect ie and 
-       hook onto this class and round it for you there or just let 'em deal   */
-.border-radius, .border-radius-4 { 
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-}
-
-.border-radius-8 { 
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-}
-
-/* .shadow places a nice drop shadow around your element                      */
-.box-shadow, .box-shadow-6 {
-  -moz-box-shadow: 0px 0px 6px #0A0A0A;
-  -webkit-box-shadow: 0px 0px 6px #0A0A0A;
-  box-shadow: 0px 0px 6px #0A0A0A;
-}
-
-.box-shadow-8-1 {
-  -moz-box-shadow: 0px 0px 8px 1px #0A0A0A;
-  -webkit-box-shadow: 0px 0px 8px 1px #0A0A0A;
-  box-shadow: 0px 0px 8px 1px #0A0A0A;
-}
 
 /* .offset is useful in bringing background image text into the page for 
        screen readers and non-css browsers (like google's spider bot) - it's 
@@ -232,4 +161,74 @@ small, .small {
 
 .right {
   float: right;
+}
+
+/* Clearfix CSS - clears floats within the containing element
+
+   Based on Tony Aslett's original 2004 version with .clearfix has a couple 
+   other bits I've picked up along the way
+  --------------------------------------------------------------------------- */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+.clear-fix {
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+html.ie .clearfix {
+  zoom: 1;  
+  display: block;
+}
+
+* html.ie .clearfix {
+  height: 1%;
+}
+
+/* div.relative is super-useful sets everything inside's absolute position to 
+       0. You can then use bottom or top, left or right & even use negative 
+       values all relative to the containing div... Far fewer js repositions. */
+div.relative { 
+  position: relative;
+}
+
+/* .round doesn't work in ie, but you can use a js plugin to detect ie and 
+       hook onto this class and round it for you there or just let 'em deal   
+      - tweak the values to fit your needs ---------------------------------- */
+.border-radius, .border-radius-4 { 
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.border-radius-8 { 
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+/* .shadow places a nice drop shadow around your element 
+      - tweak the values to fit your needs ---------------------------------- */
+.box-shadow, .box-shadow-6 {
+  -moz-box-shadow: 0px 0px 6px #0A0A0A;
+  -webkit-box-shadow: 0px 0px 6px #0A0A0A;
+  box-shadow: 0px 0px 6px #0A0A0A;
+}
+
+.box-shadow-8-1 {
+  -moz-box-shadow: 0px 0px 8px 1px #0A0A0A;
+  -webkit-box-shadow: 0px 0px 8px 1px #0A0A0A;
+  box-shadow: 0px 0px 8px 1px #0A0A0A;
 }
