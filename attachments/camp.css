@@ -67,6 +67,12 @@ h3.actions {
   font-family: "Arial Black", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
 }
 
+#footer h3 {
+  color: #d366a7;
+  font-size: 16px;
+  color: #0a0a0a;
+}
+
 h3.info-spec {
   font-weight:bolder;
 }
@@ -78,11 +84,15 @@ a#register, a#more-info {
 }
 
 a, a:visited {
+  color: #fdee19;
+}
+
+a.register {
   color: #fbaa19;
 }
 
-a#more-info {
-  color: #fdee19;
+#footer h3 a {
+  color: #0a0a0a;
 }
 
 div#contents {
@@ -159,13 +169,17 @@ ul#walker-creek-pics li.middle {
 
 #footer .contents {
   width: 1000px;
-  padding: 100px;
+  padding: 125px 100px 0;
   background-image: url(img/summer/bg-cave.jpg);
   background-repeat: no-repeat;
-  min-height: 700px;  
+  min-height: 660px;  
   margin: 0 auto;
 }
 
 #footer .actions {
   margin-top: 0;
+}
+
+#footer ul {
+  height: 438px;
 }
