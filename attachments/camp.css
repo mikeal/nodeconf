@@ -181,5 +181,18 @@ ul#walker-creek-pics li.middle {
 }
 
 #footer ul {
-  height: 438px;
+  height: 378px;
+  padding: 40px 20px 20px;
+  width: 705px;
+  margin: 0 auto;
+}
+
+#footer ul li {
+  margin: 0 0 20px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+#footer ul li.middle {
+  margin: 0 40px 20px;
 }

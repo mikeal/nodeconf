@@ -138,9 +138,22 @@ body {
   display: none;
 }
 
+.ellipsis {
+ text-overflow: ellipsis; 
+ text-wrap: none; 
+ word-wrap: none;
+ overflow: hidden; 
+ white-space: nowrap; 
+ -o-text-overflow: ellipsis;
+}
+
 /* for those elements with click events attached via js                       */
 .link { 
   cursor: pointer;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 small, .small {
@@ -177,24 +190,25 @@ small, .small {
   line-height: 0;
   height: 0;
 }
-
+.clearfix {
+    display: inline-block;
+}
 html[xmlns] .clearfix {
   display: block;
 }
-
-.clear-fix {
-  clear: both;
-  height: 0;
-  visibility: hidden;
-}
-
 html.ie .clearfix {
   zoom: 1;  
   display: block;
 }
-
-* html.ie .clearfix {
+* html .clearfix {
   height: 1%;
+}
+
+/* Sometimes you just have to use the old method...                           */
+.clear-fix {
+  clear: both;
+  height: 0;
+  visibility: hidden;
 }
 
 /* div.relative is super-useful sets everything inside's absolute position to 
@@ -231,4 +245,14 @@ div.relative {
   -moz-box-shadow: 0px 0px 8px 1px #0A0A0A;
   -webkit-box-shadow: 0px 0px 8px 1px #0A0A0A;
   box-shadow: 0px 0px 8px 1px #0A0A0A;
+}
+
+/* .background-gradient  
+      - tweak the values to fit your needs ---------------------------------- */
+.background-gradient {
+  background: #ccc * .5 + #000 * .5; /*average*/
+  background: -moz-gradient(center top, #ccc 0%, #000 100%);
+  background: -moz-linear-gradient(top, #ccc, #000);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#000));
+  background: -webkit-linear-gradient(#ccc, #000);
 }
