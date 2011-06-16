@@ -8,6 +8,7 @@ html {
   font-size: 12px;
   line-height: 1.4em;
   text-align: center;
+  height: 100%;
 }
 
 p {
@@ -62,9 +63,9 @@ h3.actions {
 }
 
 #footer h3 {
-  color: #d366a7;
+  color: #191709;
   font-size: 16px;
-  color: #0a0a0a;
+  margin-bottom: 0;
 }
 
 h3.info-spec {
@@ -80,13 +81,17 @@ a#register, a#more-info {
 a, a:visited {
   color: #fdee19;
 }
-
 a.register {
   color: #fbaa19;
 }
-
+a:hover {
+  color: #191709;
+}
 #footer h3 a {
-  color: #0a0a0a;
+  color: #191709;
+}
+#footer h3 a:hover {
+  color: #fdee19;
 }
 
 div#contents {
@@ -156,17 +161,16 @@ ul#walker-creek-pics li.middle {
 #footer {
   width: 100%;
   margin-top: 60px;
-  background-color: #3b4f13;  
+  background-color: #292318;  
   position: relative;
   padding-top: 60px;
+  border-top: 36px solid #191709;
 }
 
 #footer .contents {
   width: 1000px;
-  padding: 125px 100px 0;
-  background-image: url(img/summer/bg-cave.jpg);
+  padding: 36px 0;
   background-repeat: no-repeat;
-  min-height: 660px;  
   margin: 0 auto;
 }
 
@@ -175,7 +179,7 @@ ul#walker-creek-pics li.middle {
 }
 
 #footer ul {
-  height: 378px;
+  min-height: 225px;
   padding: 40px 20px 20px;
   width: 705px;
   margin: 0 auto;
