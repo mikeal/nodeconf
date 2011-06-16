@@ -1,18 +1,12 @@
 html {
-  background-color: #3b4f13;
-  background-image: url(img/summer/bg-pattern.png);
+  background-color: #508e13;
+  background-image: url(img/summer/bg-greenhills.jpg);
+  background-position: center top;
   background-repeat: repeat-x;
   color: #fff;
   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 1.4em;
-}
-
-body{
-  background-image: url(img/summer/bg-greenhills.jpg);
-  background-position: center top;
-  background-repeat: no-repeat;
-  min-height: 1000px;
   text-align: center;
 }
 
