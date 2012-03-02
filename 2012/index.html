@@ -15,24 +15,29 @@
     margin: 3em;
     font-size: 100%;
     font-family: sans-serif;
-    color: #f94e38;
+    color: #F94E38;
   }
-  header {
-    background: #ece2d8;
+  body, input, textarea {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .main {
+    background: #ECE2D8;
     margin: 3em auto;
     text-align: center;
     overflow: hidden;
+  }
+  .inner {
+    margin: 10px;
+    padding: 2.5em 1em 4.5em 1em;
+    border: 3px solid #FFF;
+    position: relative;
   }
   h1 {
     font-weight: bold;
     font-size: 3em;
     text-shadow: 1px 1px 1px #FFF;
-    margin: 10px;
-    padding: 3.5em 1em 5.5em 1em;
-    border: 3px solid #FFF;
     letter-spacing: .01em;
     line-height: 1.5;
-    position: relative;
   }
   h1 strong {
     font-size: .25em;
@@ -40,7 +45,6 @@
     text-transform: uppercase;
     letter-spacing: .75em;
   }
-  
   .rhomb {
     display: inline-block;
     width: .25em;
@@ -48,53 +52,163 @@
     background: #FFF;
     -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); -webkit-transform-origin: 0 100%; -moz-transform-origin: 0 100%; -ms-transform-origin: 0 100%; -o-transform-origin: 0 100%; transform-origin: 0 100%;
   }
+  #cfp {
+    width: 620px;
+    margin: 3em auto 3em auto;
+    text-align: left;
+    overflow: hidden;
+  }
+  .ss-legal {
+    font-size: 10px;
+  }
+  .ss-form {
+    background: #F94E38;
+    color: #FFF;
+    padding: .5em;
+    text-align: center;
+  }
+  .ss-form label {
+    display: block;
+    margin-bottom: 1em;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  p {
+    margin-bottom: 1.5em;
+  }
+  a,
+  a:link,
+  a:visited {
+    color: #F94E38;
+    text-decoration: underline;
+  }
+  a:hover,
+  a:active,
+  a:focus {
+    color: #E53A24;
+    text-decoration: underline;
+  }
+  .ss-footer {
+    color: #F94E38;
+  }
+  input.input_text, textarea {
+    width: 84%;
+    display: block;
+
+    margin: 0 auto;
+    padding: 0 6px;
+    font-size: 16px;
+    border: 1px solid #E53A24;
+    background: #E53A24;
+    color: #FFF;
+
+    line-height: 36px;
+
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.4), 0px 1px 0px rgba(255,255,255,.3);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.4), 0px 1px 0px rgba(255,255,255,.3);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.4), 0px 1px 0px rgba(255,255,255,.3);
+  }
+  input.input_text:hover,
+  input.input_text:active,
+  input.input_text:focus,
+  textarea:hover,
+  textarea:active,
+  textarea:focus {
+    background: #ECE2D8;
+    color: #E53A24;
+  }
+  input.input_text {
+    height: 36px;
+    line-height: 36px;
+  }
+  textarea {
+    padding: 6px;
+    line-height: 1.5;
+  }
+
 </style>
 </head>
 <body>
-    <header>
-      <h1>
-        <span class="rhomb"></span>
-        <br />
-        NodeConf 2012
-        <strong>Summer, Portland</strong>
-        <span class="rhomb"></span>
-      </h1>
-    </header>
-    <div id="cfp">
-      <div class="ss-form-container"><div class="ss-form-heading"><h1 class="ss-form-title" itemprop="name">NodeConf Reverse Call for Speakers</h1>
-      <p></p>
-      <div class="ss-form-desc ss-no-ignore-whitespace" itemprop="description">Like JSConf, NodeConf will be doing a &quot;reverse&quot; call for speakers. Rather than ask people to submit their talks we&#39;re asking the potential audience what they would like to see. You can suggest a person, or a talk, or both. You can even propose something you&#39;d like to present yourself.</div>
-
-      <hr class="ss-email-break" style="display:none;">
-      </div>
-      <div class="ss-form"><form action="https://docs.google.com/spreadsheet/formResponse?formkey=dFA1VHRMUUJxNGhhR0RTZ1Q5MDlIZWc6MQ&amp;embedded=true&amp;ifq" method="POST" id="ss-form">
-
-      <br>
-      <div class="errorbox-good">
-      <div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_0">Speaker(s)
-      </label>
-      <label class="ss-q-help" for="entry_0"></label>
-      <input type="text" name="entry.0.single" value="" class="ss-q-short" id="entry_0"></div></div></div>
-      <br> <div class="errorbox-good">
-      <div class="ss-item  ss-paragraph-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_8">Subject
-      </label>
-      <label class="ss-q-help" for="entry_8"></label>
-      <textarea name="entry.8.single" rows="8" cols="75" class="ss-q-long" id="entry_8"></textarea></div></div></div>
-      <br>
-      <input type="hidden" name="pageNumber" value="0">
-      <input type="hidden" name="backupCache" value="">
+  <div class="main">
+    <div class="inner">
+      <header>
+        <h1>
+          <span class="rhomb"></span>
+          <br />
+          NodeConf 2012
+          <strong>Summer, Portland</strong>
+          <span class="rhomb"></span>
+        </h1>
+      </header>
 
 
-      <div class="ss-item ss-navigate"><div class="ss-form-entry">
-      <input type="submit" name="submit" value="Submit"></div></div></form>
-      </div>
-      <div class="ss-footer"><div class="ss-attribution"></div>
-      <div class="ss-legal"><span class="ss-powered-by">Powered by <a href="http://docs.google.com">Google Docs</a></span>
-      <span class="ss-terms"><small><a href="https://docs.google.com/spreadsheet/reportabuse?formkey=dFA1VHRMUUJxNGhhR0RTZ1Q5MDlIZWc6MQ&amp;source=https%253A%252F%252Fdocs.google.com%252Fspreadsheet%252Fembeddedform%253Fformkey%253DdFA1VHRMUUJxNGhhR0RTZ1Q5MDlIZWc6MQ">Report Abuse</a>
-      -
-      <a href="http://www.google.com/accounts/TOS">Terms of Service</a>
-      -
-      <a href="http://www.google.com/google-d-s/terms.html">Additional Terms</a></small></span></div></div></div>
+      <div id="cfp">
+        <div class="ss-form-container">
+          <div class="ss-form-heading">
+
+            <h2 class="ss-form-title" itemprop="name">NodeConf Reverse Call for Speakers</h2>
+            <p></p>
+            <p class="ss-form-desc ss-no-ignore-whitespace" itemprop="description">
+              Like JSConf, NodeConf will be doing a &quot;reverse&quot; call for speakers. Rather than ask people to submit their talks we&#39;re asking the potential audience what they would like to see. You can suggest a person, or a talk, or both. You can even propose something you&#39;d like to present yourself.
+            </p>
+
+            <hr class="ss-email-break" style="display:none;">
+          </div>
+          <div class="ss-form">
+            <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dFA1VHRMUUJxNGhhR0RTZ1Q5MDlIZWc6MQ&amp;embedded=true&amp;ifq" method="POST" id="ss-form">
+
+              <br>
+              <div class="errorbox-good">
+                <div class="ss-item  ss-text">
+                  <div class="ss-form-entry">
+
+                    <label class="ss-q-title" for="entry_0">Speaker(s)</label>
+                    <label class="ss-q-help" for="entry_0"></label>
+                    <input type="text" name="entry.0.single" value="" class="ss-q-short input_text" id="entry_0"></div></div></div>
+                    <br>
+                    <div class="errorbox-good">
+                      <div class="ss-item  ss-paragraph-text">
+                        <div class="ss-form-entry">
+                          <label class="ss-q-title" for="entry_8">Subject</label>
+                          <label class="ss-q-help" for="entry_8"></label>
+                          <textarea name="entry.8.single" rows="5" cols="75" class="ss-q-long" id="entry_8"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <input type="hidden" name="pageNumber" value="0">
+                    <input type="hidden" name="backupCache" value="">
+
+                    <div class="ss-item ss-navigate">
+                      <div class="ss-form-entry">
+                        <input type="submit" name="submit" value="Submit">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="ss-footer">
+                  <div class="ss-attribution"></div>
+                  <div class="ss-legal">
+                    <span class="ss-powered-by">Powered by <a href="http://docs.google.com">Google Docs</a></span>
+                    <span class="ss-terms">
+                      <a href="https://docs.google.com/spreadsheet/reportabuse?formkey=dFA1VHRMUUJxNGhhR0RTZ1Q5MDlIZWc6MQ&amp;source=https%253A%252F%252Fdocs.google.com%252Fspreadsheet%252Fembeddedform%253Fformkey%253DdFA1VHRMUUJxNGhhR0RTZ1Q5MDlIZWc6MQ">Report Abuse</a>
+                      &bull;
+                      <a href="http://www.google.com/accounts/TOS">Terms of Service</a>
+                      &bull;
+                      <a href="http://www.google.com/google-d-s/terms.html">Additional Terms</a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+
+
     </div>
+  </div>
 </body>
 </html>
