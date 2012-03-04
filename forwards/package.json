@@ -1,0 +1,21 @@
+{
+  "author": "",
+  "name": "nodeconf-forwards",
+  "description": "http forwards for nodeconf",
+  "subdomain": "nodeconf-forwards",
+  "version": "0.0.0",
+  "homepage": "http://www.nodeconf.com",
+  "domains": [
+    "nodeconf.com"
+  ],
+  "scripts": {
+    "start": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikeal/nodeconf.git"
+  },
+  "engines": {
+    "node": "v0.6.x"
+  }
+}
