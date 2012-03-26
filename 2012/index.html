@@ -32,6 +32,57 @@
     border: 3px solid #FFF;
     position: relative;
   }
+
+  .main-tickets {
+    background: #ECE2D8;
+    margin: 3em auto;
+    text-align: left;
+    overflow: hidden;
+  }
+  .inner-tickets {
+    margin: 10px;
+    padding: 2.5em 1em 1.5em 1em;
+    border: 3px solid #FFF;
+    position: relative;
+  }
+  .title-tickets {
+    text-align: center;
+  }
+
+  .main-room {
+    background: #ECE2D8;
+    margin: 3em auto;
+    text-align: left;
+    overflow: hidden;
+  }
+  .inner-room {
+    margin: 10px;
+    padding: 2.5em 1em 1.5em 1em;
+    border: 3px solid #FFF;
+    position: relative;
+  }
+  .title-room {
+    text-align:center;
+    padding-bottom:5px;
+  }
+
+  .main-spns {
+    background: #ECE2D8;
+    margin: 3em auto;
+    text-align: left;
+    overflow: hidden;
+  }
+  .inner-spns {
+    margin: 10px;
+    padding: 2.5em 1em 1.5em 1em;
+    border: 3px solid #FFF;
+    position: relative;
+  }
+  img.spns {
+    width:31%;
+    padding-left:1%;
+  }
+
   h1 {
     font-weight: bold;
     font-size: 3em;
@@ -43,7 +94,7 @@
     font-size: .25em;
     display: block;
     text-transform: uppercase;
-    letter-spacing: .75em;
+    letter-spacing: .25em;
   }
   p {
     margin-bottom: 1.5em;
@@ -108,7 +159,7 @@
     border: 1px solid #c9b5a4;
     background: #ECE2D8;
     color: #E53A24;
-    
+
 
     line-height: 36px;
 
@@ -136,12 +187,12 @@
     padding: 6px;
     line-height: 1.5;
   }
-  
+
   .submit,
   .submit:link,
   .submit:visited {
     width: 86%;
-    
+
     font-weight: bold;
     letter-spacing: .05em;
     text-transform: uppercase;
@@ -171,7 +222,39 @@
     text-align: center;
   }
 
+  div.images {
+    width:100%;
+  }
+  div.images img {
+    width:48%;
+    padding-left:1%;
+    text-align:center;
+  }
+  div.images-center {
+    text-align:center;
+  }
+  div.images-center img {
+    padding-left:0%;
+  }
+
 </style>
+<script type="text/javascript">
+	var analyticsFileTypes = [''];
+	var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3515839-9']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </head>
 <body>
   <div class="main">
@@ -182,11 +265,10 @@
           <span class="rhomb"></span>
           <br />
           NodeConf 2012
-          <strong>Summer, Portland</strong>
+          <strong>July 2nd & 3rd, Portland</strong>
           <span class="rhomb"></span>
         </h1>
       </header>
-
 
       <div id="cfp">
         <div class="ss-form-container">
@@ -246,5 +328,83 @@
 
     </div>
   </div>
+
+  <div class="main-spns">
+    <div class="inner-spns">
+      <div class="images-spns">
+        <img class="spns" style="padding-bottom:18px" src="images/Yammer.png"></img>
+        <span class="nodejitsu">
+          <style>
+            img#nodejitsu-cloud {
+              max-height:80px;
+              max-width:80px;
+              padding-bottom:10px;
+            }
+            img#nodejitsu-letters {
+              width:23%;
+              padding-bottom:20px;
+            }
+          </style>
+          <img id="nodejitsu-cloud" src="images/nodejitsu-cloud.png"></img>
+          <img id="nodejitsu-letters" src="images/nodejitsu-letters.png"></img>
+        </span>
+        <img class="spns" style="" src="images/joyent.png"></img>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-tickets">
+    <div class="inner-tickets">
+      <div class="title-tickets"><strong>Programme</strong></div>
+      <p>The first day will cover "the world of node". You'll hear about node's wide adoption and what has made it such a success across different use cases.</p>
+      <p>The second day will be "the power of node". We'll cover the largest deployments, bleeding edge debugging and hardware support, and see just how far you can go with node.js.</p>
+    </div>
+  </div>
+
+  <div class="main-tickets">
+    <div class="inner-tickets">
+      <div class="title-tickets"><strong>Tickets & Hotel Information</strong></div>
+
+      <p>The official conference hotel is <a href="http://www.jupiterhotel.com/">The Jupiter</a>. We have rented the entire hotel, all the rooms as well as event space, for NodeConf.</p>
+      <p>The first batch of tickets sold will include 3 nights (July 1st - 3rd) stay in The Jupiter Hotel. Each ticket type includes the prices of a different room. The room prices are added to the ticket price so they will vary. The hotel has two sides, a "chill side" and a "bar side". The rooms types are identical between the two sides but the quite hours on the "chill side" begin earlier than the "bar side".</p>
+      <p>There is a small number of "kitchenette" rooms. These rooms feature an adjoining kitchenette, complete with microwave, mini fridge, intimate seating for two, dinnerware and cooking utensils.</p>
+      <p>Tickets will go on sale in April. Watch <a href="http://twitter.com/nodeconf">@NodeConf</a> for details.</p>
+    </div>
+
+  </div>
+
+  <div class="main-room">
+    <div class="inner-room">
+      <div class="title-room"><strong>LoBu (Single Queen)</strong></div>
+      <p>These signature Jupiter Hotel rooms are cozy, tight and minimalist in design. Rooms feature chalkboard doors, free wireless internet, queen pillowtop platform beds, down comforters and pillows, painted murals and speakers for your notebook or MP3 device.</p>
+      <div class="images">
+        <img src="images/lobu1.jpg"></img>
+        <img src="images/lobu.jpg"></img>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-room">
+    <div class="inner-room">
+      <div class="title-room"><strong>Metro (Single Queen)</strong></div>
+      <p>The most popular room. 32” flat screen TVs, modern Tomita Design desks and headboards, down comforters and pillows, painted or photorealist murals, speakers for your notebook or portable MP3 device, green amenities, and chalkboard doors – inside and out.</p>
+      <div class="images">
+        <img src="images/metro2.jpg"></img>
+        <img src="images/marilyn_metro.jpg"></img>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-room">
+    <div class="inner-room">
+      <div class="title-room"><strong>Deuce (Double Queen)</strong></div>
+      <p>Double your sleeping pleasure in this spacious room with two pillowtop queen beds, down comforters and pillows, free wireless internet, 32” flat screen TVs, modern Tomita Design desks, green amenities, and chalkboard doors.</p>
+      <div class="images-center">
+        <img src="images/moscaGreenDeuce.jpg" ></img>
+      </div>
+    </div>
+  </div>
+
+
 </body>
 </html>
