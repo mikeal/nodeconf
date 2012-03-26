@@ -46,9 +46,6 @@
     border: 3px solid #FFF;
     position: relative;
   }
-  .title-tickets {
-    text-align: center;
-  }
 
   .main-room {
     background: #ECE2D8;
@@ -68,15 +65,11 @@
   }
 
   .main-spns {
-    background: #ECE2D8;
+    background: #FFF;
     margin: 3em auto;
+    padding: 3em 0;
     text-align: left;
     overflow: hidden;
-  }
-  .inner-spns {
-    margin: 10px;
-    padding: 2.5em 1em 1.5em 1em;
-    position: relative;
   }
   .images-spns {
     margin: 0 auto;
@@ -102,6 +95,18 @@
     display: block;
     text-transform: uppercase;
     letter-spacing: .25em;
+  }
+  h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+  }
+  section {
+    text-align: left;
+    margin-bottom: 72px;
+  }
+  section p {
+    max-width: 600px;
   }
   p {
     margin-bottom: 1.5em;
@@ -237,12 +242,7 @@
     padding-left:1%;
     text-align:center;
   }
-  div.images-center {
-    text-align:center;
-  }
-  div.images-center img {
-    padding-left:0%;
-  }
+
 
 </style>
 <script type="text/javascript">
@@ -332,71 +332,83 @@
                 </div>
               </div>
 
+            </div>
 
     </div>
   </div>
+
+
 
   <div class="main-spns">
-    <div class="inner-spns">
-      <div class="images-spns">
-        <img class="spns yammer" src="images/logo_yammer.png" />
-        <img class="spns" src="images/logo_nodejitsu.png" />
-        <img class="spns" src="images/logo_joyent.png" />
-      </div>
+    <div class="images-spns">
+      <img class="spns yammer" src="images/logo_yammer.png" />
+      <img class="spns" src="images/logo_nodejitsu.png" />
+      <img class="spns" src="images/logo_joyent.png" />
     </div>
   </div>
 
-  <div class="main-tickets">
-    <div class="inner-tickets">
-      <div class="title-tickets"><strong>Programme</strong></div>
-      <p>The first day will cover "the world of node". You'll hear about node's wide adoption and what has made it such a success across different use cases.</p>
-      <p>The second day will be "the power of node". We'll cover the largest deployments, bleeding edge debugging and hardware support, and see just how far you can go with node.js.</p>
+
+  <div class="main">
+    <div class="inner">
+
+
+      <section class="programme">
+        <h3>Programme</h3>
+        <p>The first day will cover "the world of node". You'll hear about node's wide adoption and what has made it such a success across different use cases.</p>
+        <p>The second day will be "the power of node". We'll cover the largest deployments, bleeding edge debugging and hardware support, and see just how far you can go with node.js.</p>
+      </section>
+
+
+
+      <section class="tickets">
+
+        <h3>Tickets &amp; Hotel Informations</h3>
+
+        <p>The official conference hotel is <a href="http://www.jupiterhotel.com/">The Jupiter</a>. We have rented the entire hotel, all the rooms as well as event space, for NodeConf.</p>
+        <p>The first batch of tickets sold will include 3 nights (July 1st - 3rd) stay in The Jupiter Hotel. Each ticket type includes the prices of a different room. The room prices are added to the ticket price so they will vary. The hotel has two sides, a "chill side" and a "bar side". The rooms types are identical between the two sides but the quite hours on the "chill side" begin earlier than the "bar side".</p>
+        <p>There is a small number of "kitchenette" rooms. These rooms feature an adjoining kitchenette, complete with microwave, mini fridge, intimate seating for two, dinnerware and cooking utensils.</p>
+        <p>Tickets will go on sale in April. Watch <a href="http://twitter.com/nodeconf">@NodeConf</a> for details.</p>
+
+      </section>
+
+
+      <section class="hotel">
+
+        <div class="room">
+          <h4>LoBu (Single Queen)</h4>
+          <p>These signature Jupiter Hotel rooms are cozy, tight and minimalist in design. Rooms feature chalkboard doors, free wireless internet, queen pillowtop platform beds, down comforters and pillows, painted murals and speakers for your notebook or MP3 device.</p>
+          <div class="images">
+            <img src="images/lobu1.jpg" />
+            <img src="images/lobu.jpg" />
+          </div>
+        </div>
+
+        <div class="room">
+          <h4>Metro (Single Queen)</h4>
+          <p>The most popular room. 32” flat screen TVs, modern Tomita Design desks and headboards, down comforters and pillows, painted or photorealist murals, speakers for your notebook or portable MP3 device, green amenities, and chalkboard doors – inside and out.</p>
+          <div class="images">
+            <img src="images/metro2.jpg" />
+            <img src="images/marilyn_metro.jpg" />
+          </div>
+        </div>
+
+        <div class="room">
+          <h4>Deuce (Double Queen)</h4>
+          <p>Double your sleeping pleasure in this spacious room with two pillowtop queen beds, down comforters and pillows, free wireless internet, 32” flat screen TVs, modern Tomita Design desks, green amenities, and chalkboard doors.</p>
+            <img src="images/moscaGreenDeuce.jpg" />
+        </div>
+
+      </section>
+
+
+
+
+
+
     </div>
   </div>
 
-  <div class="main-tickets">
-    <div class="inner-tickets">
-      <div class="title-tickets"><strong>Tickets & Hotel Information</strong></div>
 
-      <p>The official conference hotel is <a href="http://www.jupiterhotel.com/">The Jupiter</a>. We have rented the entire hotel, all the rooms as well as event space, for NodeConf.</p>
-      <p>The first batch of tickets sold will include 3 nights (July 1st - 3rd) stay in The Jupiter Hotel. Each ticket type includes the prices of a different room. The room prices are added to the ticket price so they will vary. The hotel has two sides, a "chill side" and a "bar side". The rooms types are identical between the two sides but the quite hours on the "chill side" begin earlier than the "bar side".</p>
-      <p>There is a small number of "kitchenette" rooms. These rooms feature an adjoining kitchenette, complete with microwave, mini fridge, intimate seating for two, dinnerware and cooking utensils.</p>
-      <p>Tickets will go on sale in April. Watch <a href="http://twitter.com/nodeconf">@NodeConf</a> for details.</p>
-    </div>
-
-  </div>
-
-  <div class="main-room">
-    <div class="inner-room">
-      <div class="title-room"><strong>LoBu (Single Queen)</strong></div>
-      <p>These signature Jupiter Hotel rooms are cozy, tight and minimalist in design. Rooms feature chalkboard doors, free wireless internet, queen pillowtop platform beds, down comforters and pillows, painted murals and speakers for your notebook or MP3 device.</p>
-      <div class="images">
-        <img src="images/lobu1.jpg"></img>
-        <img src="images/lobu.jpg"></img>
-      </div>
-    </div>
-  </div>
-
-  <div class="main-room">
-    <div class="inner-room">
-      <div class="title-room"><strong>Metro (Single Queen)</strong></div>
-      <p>The most popular room. 32” flat screen TVs, modern Tomita Design desks and headboards, down comforters and pillows, painted or photorealist murals, speakers for your notebook or portable MP3 device, green amenities, and chalkboard doors – inside and out.</p>
-      <div class="images">
-        <img src="images/metro2.jpg"></img>
-        <img src="images/marilyn_metro.jpg"></img>
-      </div>
-    </div>
-  </div>
-
-  <div class="main-room">
-    <div class="inner-room">
-      <div class="title-room"><strong>Deuce (Double Queen)</strong></div>
-      <p>Double your sleeping pleasure in this spacious room with two pillowtop queen beds, down comforters and pillows, free wireless internet, 32” flat screen TVs, modern Tomita Design desks, green amenities, and chalkboard doors.</p>
-      <div class="images-center">
-        <img src="images/moscaGreenDeuce.jpg" ></img>
-      </div>
-    </div>
-  </div>
 
 
 </body>
