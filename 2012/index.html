@@ -25,6 +25,7 @@
     margin: 3em auto;
     text-align: center;
     overflow: hidden;
+    min-width: 660px;
   }
   .inner {
     margin: 10px;
@@ -75,12 +76,18 @@
   .inner-spns {
     margin: 10px;
     padding: 2.5em 1em 1.5em 1em;
-    border: 3px solid #FFF;
     position: relative;
   }
-  img.spns {
-    width:31%;
-    padding-left:1%;
+  .images-spns {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  .spns {
+    max-width: 29%;
+    padding-left: 6%;
+  }
+  .spns.yammer {
+    padding-left: 0;
   }
 
   h1 {
@@ -332,23 +339,9 @@
   <div class="main-spns">
     <div class="inner-spns">
       <div class="images-spns">
-        <img class="spns" style="padding-bottom:18px" src="images/Yammer.png"></img>
-        <span class="nodejitsu">
-          <style>
-            img#nodejitsu-cloud {
-              max-height:80px;
-              max-width:80px;
-              padding-bottom:10px;
-            }
-            img#nodejitsu-letters {
-              width:23%;
-              padding-bottom:20px;
-            }
-          </style>
-          <img id="nodejitsu-cloud" src="images/nodejitsu-cloud.png"></img>
-          <img id="nodejitsu-letters" src="images/nodejitsu-letters.png"></img>
-        </span>
-        <img class="spns" style="" src="images/joyent.png"></img>
+        <img class="spns yammer" src="images/logo_yammer.png" />
+        <img class="spns" src="images/logo_nodejitsu.png" />
+        <img class="spns" src="images/logo_joyent.png" />
       </div>
     </div>
   </div>
