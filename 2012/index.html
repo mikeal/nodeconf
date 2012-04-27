@@ -29,16 +29,24 @@
     min-width: 280px;
 
     max-width: 640px;
-    
+
     padding: 0 20px;
-    
+
     border-top: 6px solid #059fd2;
   }
-  
+
   header {
     margin-bottom: 72px;
   }
-  
+
+  .btn_cntr {
+    width: 268px;
+    margin: 24px auto;
+    padding: 12px 0;
+    border-top: 3px dotted #FFF;
+    border-bottom: 3px dotted #FFF;
+  }
+
   .btn {
     display: block;
     width: 180px;
@@ -56,7 +64,7 @@
     font-size: 24px;
     letter-spacing: .15em;
   }
-  
+
   a.btn,
   a.btn:link,
   a.btn:visited {
@@ -82,8 +90,8 @@
     max-width: 1200px;
   }
   .sponsors-logo {
-    max-width: 26%;
-    padding: 0 3%;
+    max-width: 40%;
+    padding: 4%;
   }
 
   h1, h2, h3, h4 {
@@ -115,11 +123,11 @@
     display: block;
     font-weight: 800;
   }
-  
+
   .location {
     font-size: 32px;
   }
-  
+
   .date {
     font-size: 16px;
     letter-spacing: .15em;
@@ -127,11 +135,11 @@
 
   h2 {
     font-weight: 800;
-    
+
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: .25em;
-    
+
     text-align: center;
   }
   section {
@@ -201,7 +209,7 @@
     padding: 24px 0;
     text-align: center;
   }
-  
+
   footer a,
   footer a:link,
   footer a:visited {
@@ -220,7 +228,7 @@
 
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-      
+
 <script type="text/javascript" src="http://use.typekit.com/ioc3jun.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
@@ -256,22 +264,29 @@
           <span class="date">July 2nd &amp; 3rd 2012</span>
         </p>
 
-        <!-- <a href="#" class="btn">
+        <!--
+        <a href="#" class="btn">
           Tickets
-        </a> -->
+        </a>
+        -->
+        <p class="btn_cntr">
+          <a href="#" class="btn">
+            Tickets
+          </a>
+        </p>
 
       </header>
 
       <section class="sponsors">
         <h2>Sponsors</h2>
-        
+
         <div class="images-sponsors">
           <img class="sponsors-logo" src="images/logo_yammer.png" />
-          <img class="sponsors-logo" src="images/logo_nodejitsu.png" />
           <img class="sponsors-logo" src="images/logo_joyent.png" />
-          <div style="text-align:center">
-            <img class="sponsors-logo" src="images/logo_voxer.png" />
-          </div>
+        </div>
+        <div class="images-sponsors">
+          <img class="sponsors-logo" src="images/logo_voxer.png" />
+          <img class="sponsors-logo" src="images/logo_nodejitsu.png" />
         </div>
       </section>
 
@@ -326,10 +341,10 @@
         </div>
 
       </section>
-      
-      
 
-      
+
+
+
 
 
 
