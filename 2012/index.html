@@ -12,71 +12,133 @@
 
   html {font-size:100.01%;}
   body {
-    margin: 3em;
+    margin: 0;
     font-size: 100%;
-    font-family: sans-serif;
-    color: #F94E38;
-    background: #ECE2D8;
+    color: #059fd2;
+    background: #f4ede7 url(images/bg.png) repeat 0 0;
+    font-weight: 400;
   }
   body, input, textarea {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Proxima Nova", "proxima-nova-alt", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   .main {
-    background: #FFF;
-    margin: 3em auto;
+/*    background: rgba(255,255,255,.7); */
+    margin: 0 auto;
     text-align: center;
     overflow: hidden;
-    min-width: 660px;
+    min-width: 280px;
+
+    max-width: 640px;
+    
+    padding: 0 20px;
+    
+    border-top: 6px solid #059fd2;
   }
-  .inner {
-    margin: 10px;
-    padding: 2.5em 72px 4.5em 72px;
-    border: 3px solid #ECE2D8;
-    position: relative;
+  
+  header {
+    margin-bottom: 72px;
+  }
+  
+  .btn {
+    display: block;
+    width: 180px;
+    height: 60px;
+    margin: 12px auto;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #059fd2;
+    font-weight: 800;
+    line-height: 60px;
+    font-size: 24px;
+    letter-spacing: .15em;
+  }
+  
+  a.btn,
+  a.btn:link,
+  a.btn:visited {
+    color: #FFF;
+    text-decoration: none;
   }
 
+  a.btn:hover,
+  a.btn:active,
+  a.btn:focus {
+    color: #FFF;
+    text-decoration: none;
+  }
 
-  .spns {
+  .sponsors {
     margin-bottom: 4.5em;
     padding: 3em 0;
     text-align: left;
     overflow: hidden;
   }
-  .images-spns {
+  .images-sponsors {
     margin: 0 auto;
     max-width: 1200px;
   }
-  .spns-logo {
+  .sponsors-logo {
     max-width: 26%;
     padding: 0 3%;
+  }
+
+  h1, h2, h3, h4 {
+    color: #f94e38;
   }
 
   h1 {
     font-weight: bold;
     font-size: 4em;
-    text-shadow: 1px 1px 1px #FFF;
     letter-spacing: .01em;
     line-height: 1.5;
+    display: block;
+    width: 268px;
+    height: 268px;
+    margin: 36px auto;
+    background: transparent url(images/nodeconf_logo_small.png) no-repeat 50% 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
   }
-  h1 strong {
-    font-size: .25em;
+  .info {
     display: block;
     text-transform: uppercase;
     letter-spacing: .25em;
   }
-  h3 {
+
+  .info span {
+    text-align: center;
+    display: block;
+    font-weight: 800;
+  }
+  
+  .location {
+    font-size: 32px;
+  }
+  
+  .date {
+    font-size: 16px;
+    letter-spacing: .15em;
+  }
+
+  h2 {
+    font-weight: 800;
+    
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: .25em;
+    
+    text-align: center;
   }
   section {
     text-align: left;
     margin-bottom: 72px;
-    border-top: 3px solid #ECE2D8;
   }
-  section p {
-    max-width: 600px;
-  }
+
   p {
     margin-bottom: 1.5em;
   }
@@ -92,20 +154,22 @@
     color: #E53A24;
     text-decoration: underline;
   }
-  .rhomb {
-    display: inline-block;
-    width: .25em;
-    height: .25em;
-    background: #ECE2D8;
-    -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); -webkit-transform-origin: 0 100%; -moz-transform-origin: 0 100%; -ms-transform-origin: 0 100%; -o-transform-origin: 0 100%; transform-origin: 0 100%;
-  }
-  
+
+ /*
+   .rhomb {
+     display: inline-block;
+     width: .25em;
+     height: .25em;
+     background: #ECE2D8;
+     -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); -webkit-transform-origin: 0 100%; -moz-transform-origin: 0 100%; -ms-transform-origin: 0 100%; -o-transform-origin: 0 100%; transform-origin: 0 100%;
+   }
+ */
   .hint {
     background: #F94E38;
     color: #FFF;
     padding: 1em;
   }
-  
+
   .hint a,
   .hint a:link,
   .hint a:visited {
@@ -120,19 +184,48 @@
   }
 
   div.images {
-    width:100%;
+    width: 100%;
   }
   div.images img {
-    width:48%;
-    padding-left:1%;
-    text-align:center;
+    width: 48%;
+    padding-left: 1%;
+    text-align: center;
   }
 
 
+  footer {
+    background: #059fd2;
+    color: #7bd0ec;
+    font-size: 14px;
+    margin: 0;
+    padding: 24px 0;
+    text-align: center;
+  }
+  
+  footer a,
+  footer a:link,
+  footer a:visited {
+    color: #f4ede7;
+    text-decoration: none;
+  }
+
+  footer a:hover,
+  footer a:active,
+  footer a:focus {
+    color: #f4ede7;
+    text-decoration: underline;
+  }
+
 </style>
+
+
+<script type="text/javascript" src="http://use.typekit.com/ioc3jun.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
 <script type="text/javascript">
-	var analyticsFileTypes = [''];
-	var analyticsEventTracking = 'enabled';
+  var analyticsFileTypes = [''];
+  var analyticsEventTracking = 'enabled';
 </script>
 <script type="text/javascript">
 
@@ -150,32 +243,26 @@
 </head>
 <body>
   <div class="main">
-    <div class="inner">
 
       <header>
         <h1>
-          <span class="rhomb"></span>
-          <br />
           NodeConf 2012
-          <strong>July 2nd & 3rd, Portland</strong>
-          <span class="rhomb"></span>
         </h1>
+
+        <p class="info">
+          <span class="location">Portland</span>
+          <span class="date">July 2nd &amp; 3rd 2012</span>
+        </p>
+
+        <!-- <a href="#" class="btn">
+          Tickets
+        </a> -->
+
       </header>
 
 
-
-      <section class="spns">
-        <div class="images-spns">
-          <img class="spns-logo" src="images/logo_yammer.png" />
-          <img class="spns-logo" src="images/logo_nodejitsu.png" />
-          <img class="spns-logo" src="images/logo_joyent.png" />
-        </div>
-      </section>
-
-
-
       <section class="programme">
-        <h3>Programme</h3>
+        <h2>Programme</h2>
         <p>The first day will cover "the world of node". You'll hear about node's wide adoption and what has made it such a success across different use cases.</p>
         <p>The second day will be "the power of node". We'll cover the largest deployments, bleeding edge debugging and hardware support, and see just how far you can go with node.js.</p>
       </section>
@@ -184,7 +271,7 @@
 
       <section class="tickets">
 
-        <h3>Tickets &amp; Hotel Information</h3>
+        <h2>Tickets &amp; Hotel Information</h2>
 
         <p>The official conference hotel is <a href="http://www.jupiterhotel.com/">The Jupiter</a>. We have rented the entire hotel, all the rooms as well as event space, for NodeConf.</p>
         <p>The first batch of tickets sold will include 3 nights (July 1st - 3rd) stay in The Jupiter Hotel. Each ticket type includes the prices of a different room. The room prices are added to the ticket price so they will vary. The hotel has two sides, a "chill side" and a "bar side". The room types are identical between the two sides but the quiet hours on the "chill side" begin earlier than the "bar side".</p>
@@ -194,8 +281,9 @@
       </section>
 
 
+
       <section class="hotel">
-        
+
         <div class="room">
           <h4>LoBu (Single Queen)</h4>
           <p>These signature Jupiter Hotel rooms are cozy, tight and minimalist in design. Rooms feature chalkboard doors, free wireless internet, queen pillowtop platform beds, down comforters and pillows, painted murals and speakers for your notebook or MP3 device.</p>
@@ -217,20 +305,34 @@
         <div class="room">
           <h4>Deuce (Double Queen)</h4>
           <p>Double your sleeping pleasure in this spacious room with two pillowtop queen beds, down comforters and pillows, free wireless internet, 32” flat screen TVs, modern Tomita Design desks, green amenities, and chalkboard doors.</p>
+          <div class="images">
             <img src="images/moscaGreenDeuce.jpg" />
+          </div>
         </div>
+
+      </section>
+      
+      
+
+      <section class="sponsors">
+        <h2>Sponsors</h2>
         
+        <div class="images-sponsors">
+          <img class="sponsors-logo" src="images/logo_yammer.png" />
+          <img class="sponsors-logo" src="images/logo_nodejitsu.png" />
+          <img class="sponsors-logo" src="images/logo_joyent.png" />
+        </div>
       </section>
 
 
 
-
-
-
-    </div>
   </div>
 
-
+  <footer>
+    <p>
+      Watch <a href="http://twitter.com/nodeconf">@NodeConf</a> for updates.
+    </p>
+  </footer>
 
 
 </body>
