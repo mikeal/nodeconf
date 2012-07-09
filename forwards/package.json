@@ -3,7 +3,7 @@
   "name": "nodeconf-forwards",
   "description": "http forwards for nodeconf",
   "subdomain": "nodeconf-forwards",
-  "version": "0.0.0",
+  "version": "0.0.0-1",
   "homepage": "http://www.nodeconf.com",
   "domains": [
     "nodeconf.com"

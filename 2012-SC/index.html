@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>NodeConf SummerCamp 2012</title>
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+  article, aside, details, figcaption, figure, footer, header,
+  hgroup, menu, nav, section { display: block; }
+
+  html {font-size:100.01%;}
+  body {
+    margin: 0;
+    font-size: 100%;
+    color: #059fd2;
+    background: #f4ede7 url(images/bg.png) repeat 0 0;
+    font-weight: 400;
+  }
+  body, input, textarea {
+    font-family: "Proxima Nova", "proxima-nova-alt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .main {
+/*    background: rgba(255,255,255,.7); */
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    min-width: 280px;
+
+    max-width: 640px;
+
+    padding: 0 20px;
+
+    border-top: 6px solid #059fd2;
+  }
+
+  header {
+    margin-bottom: 72px;
+  }
+
+  .btn_cntr {
+    width: 268px;
+    margin: 24px auto;
+    padding: 12px 0;
+    border-top: 3px dotted #FFF;
+    border-bottom: 3px dotted #FFF;
+  }
+
+  .btn {
+    display: block;
+    width: 180px;
+    height: 60px;
+    margin: 12px auto;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 60px;
+    font-size: 24px;
+    letter-spacing: .15em;
+  }
+
+  a.btn,
+  a.btn:link,
+  a.btn:visited {
+    color: #FFF;
+    text-decoration: none;
+    background-color: #059fd2;
+  }
+
+  a.btn:hover,
+  a.btn:active,
+  a.btn:focus {
+    color: #FFF;
+    text-decoration: none;
+    background-color: #05c5ea;
+  }
+
+  .sponsors {
+    margin-bottom: 4.5em;
+    padding: 3em 0;
+    text-align: left;
+    overflow: hidden;
+  }
+  .images-sponsors {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  .sponsors-logo {
+    max-width: 40%;
+    padding: 4%;
+  }
+
+  h1, h2, h3, h4 {
+    color: #f94e38;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 4em;
+    letter-spacing: .01em;
+    line-height: 1.5;
+    display: block;
+    width: 268px;
+    height: 268px;
+    margin: 36px auto;
+    background: transparent url(images/nodeconf_logo_small.png) no-repeat 50% 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .info {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+  }
+
+  .info span {
+    text-align: center;
+    display: block;
+    font-weight: 800;
+  }
+
+  .location {
+    font-size: 32px;
+  }
+
+  .date {
+    font-size: 16px;
+    letter-spacing: .15em;
+  }
+
+  h2 {
+    font-weight: 800;
+
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+
+    text-align: center;
+  }
+  section {
+    text-align: left;
+    margin-bottom: 72px;
+  }
+
+  p {
+    margin-bottom: 1.5em;
+  }
+  a,
+  a:link,
+  a:visited {
+    color: #F94E38;
+    text-decoration: underline;
+  }
+  a:hover,
+  a:active,
+  a:focus {
+    color: #E53A24;
+    text-decoration: underline;
+  }
+
+ /*
+   .rhomb {
+     display: inline-block;
+     width: .25em;
+     height: .25em;
+     background: #ECE2D8;
+     -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); -webkit-transform-origin: 0 100%; -moz-transform-origin: 0 100%; -ms-transform-origin: 0 100%; -o-transform-origin: 0 100%; transform-origin: 0 100%;
+   }
+ */
+  .hint {
+    background: #F94E38;
+    color: #FFF;
+    padding: 1em;
+  }
+
+  .hint a,
+  .hint a:link,
+  .hint a:visited {
+    color: #FFF;
+    text-decoration: underline;
+  }
+  .hint a:hover,
+  .hint a:active,
+  .hint a:focus {
+    color: #FFF;
+    text-decoration: underline;
+  }
+
+  div.images {
+    width: 100%;
+  }
+  div.images img {
+    width: 48%;
+    padding-left: 1%;
+    text-align: center;
+  }
+
+
+  footer {
+    background: #059fd2;
+    color: #7bd0ec;
+    font-size: 14px;
+    margin: 0;
+    padding: 24px 0;
+    text-align: center;
+  }
+
+  footer a,
+  footer a:link,
+  footer a:visited {
+    color: #f4ede7;
+    text-decoration: none;
+  }
+
+  footer a:hover,
+  footer a:active,
+  footer a:focus {
+    color: #f4ede7;
+    text-decoration: underline;
+  }
+  
+  
+
+</style>
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<script type="text/javascript" src="http://use.typekit.com/ioc3jun.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+<script type="text/javascript">
+  var analyticsFileTypes = [''];
+  var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3515839-9']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <div class="main">
+
+      <header>
+        <h1>
+          NodeConf SummerCamp 2012
+        </h1>
+
+        <p class="info">
+          <span class="location">SummerCamp!</span>
+          <span class="location">Walker Creek Ranch</span>
+          <span class="date">September 4th through 6th 2012</span>
+        </p>
+
+        <p class="btn_cntr">
+          <a href="https://tito.io/nodeconf/nodeconf-summercamp" class="btn">
+            Tickets
+          </a>
+        </p>
+
+      </header>
+
+      <section class="sponsors">
+        <h2>Sponsors</h2>
+
+        <div class="images-sponsors">
+          <a href="http://www.yammer.com"><img class="sponsors-logo" src="images/logo_yammer.png" /></a>
+          <a href="http://www.joyent.com"><img class="sponsors-logo" src="images/logo_joyent.png" /></a>
+        </div>
+        <div class="images-sponsors">
+          <a href="http://www.nodejitsu.com"><img class="sponsors-logo" src="images/logo_nodejitsu.png" /></a>
+          <a href="http://www.ensighten.com/">
+            <img class="sponsors-logo" src="images/ensighten_logo_large.png"/>
+          </a>
+        </div>
+      </section>
+
+
+      <section class="programme">
+        <h2>What is this?</h2>
+        
+        <p>NodeConf SummerCamp is an unconference for node.js developers. It is held from September 4th to September 6th at Walker Creek Ranch in Marin County, California.</p>
+
+      <section class="tickets">
+
+        <h2>How do we get there?</h2>
+
+        <p>Shuttles will leave San Francisco on September 4th and take you to Walker Creak Ranch. If you want to drive yourself there is plenty of parking available.</p>
+      
+      <section class="programme">
+        <h2>Tickets</h2>
+        
+        <p>Semi-Private tickets come with a bed in a shared "dorm" in the on-site lodges.</p>
+
+        <p>CampOut tickets require you to bring your own tent. There is an on-site shower and bathroom set up for all campers.</p>
+      </section>
+
+  </div>
+
+  <footer>
+    <p>
+      Watch <a href="http://twitter.com/nodeconf">@NodeConf</a> for updates.
+    </p>
+  </footer>
+  
+  <div style="text-align:center">
+    <h2>Pictures from SummerCamp 2011</h2>
+    <img src="images/NCSC1.png" style="width:700px"/><br>
+    <img src="images/NCSC2.png" style="width:700px"/><br>
+    <img src="images/NCSC3.png" style="width:700px"/>
+  </div>
+
+
+</body>
+</html>
