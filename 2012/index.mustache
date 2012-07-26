@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>NodeConf 2012 - {{name}}</title>
+<title>NodeConf 2012</title>
 <!--[if IE]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -15,7 +15,7 @@
     margin: 0;
     font-size: 100%;
     color: #059fd2;
-    background: #f4ede7 url(../images/bg.png) repeat 0 0;
+    background: #f4ede7 url(images/bg.png) repeat 0 0;
     font-weight: 400;
   }
   body, input, textarea {
@@ -30,13 +30,13 @@
 
     max-width: 640px;
 
-    padding: 0 0px;
+    padding: 0 20px;
 
     border-top: 6px solid #059fd2;
   }
 
   header {
-    margin-bottom: 10px;
+    margin-bottom: 72px;
   }
 
   .btn_cntr {
@@ -108,7 +108,7 @@
     width: 268px;
     height: 268px;
     margin: 36px auto;
-    background: transparent url(../images/nodeconf_logo_small.png) no-repeat 50% 0;
+    background: transparent url(images/nodeconf_logo_small.png) no-repeat 50% 0;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -128,9 +128,6 @@
   .location {
     font-size: 32px;
   }
-  .speaker {
-    font-size: 28px;
-  }
 
   .date {
     font-size: 16px;
@@ -148,7 +145,7 @@
   }
   section {
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 72px;
   }
 
   p {
@@ -262,118 +259,59 @@
 
       <header>
         <h1>
-          NodeConf Theatre 2012
+          NodeConf 2012
         </h1>
+
+        <p class="info">
+          <span class="location">Portland</span>
+          <span class="date">July 2nd &amp; 3rd 2012</span>
+        </p>
+
       </header>
+
+      <section class="sponsors">
+        <h2>Sponsors</h2>
+
+        <div class="images-sponsors">
+          <a href="http://www.yammer.com"><img class="sponsors-logo" src="images/logo_yammer.png" /></a>
+          <a href="http://www.joyent.com"><img class="sponsors-logo" src="images/logo_joyent.png" /></a>
+        </div>
+        <div class="images-sponsors">
+          <a href="http://www.voxer.com"><img class="sponsors-logo" src="images/logo_voxer.png" /></a>
+          <a href="http://www.nodejitsu.com"><img class="sponsors-logo" src="images/logo_nodejitsu.png" /></a>
+        </div>
+        <div class="images-sponsors">
+          <a href="http://andyet.net" style="text-decoration:none">
+            <img class="sponsors-logo" style="max-height:120px;padding-right:15%;padding-left:15%;padding-top:0" src="images/andyet-logo.png" />
+          </a>
+          <a href="http://www.ensighten.com/">
+            <img class="sponsors-logo" src="images/ensighten_logo_large.png" style="margin-bottom:10px"/>
+          </a>
+        </div>
+        
+        <div class="images-sponsors">
+          <a href="http://www.mozilla.org" style="text-decoration:none">
+            <img class="sponsors-logo" src="images/mozilla.png" style="margin-left:20px" ></img>
+          </a>
+          <a href="http://www.sendgrid.com">
+            <img class="sponsors-logo" src="images/sendgrid.png" style="margin-left:40px" />
+          </a>
+        </div>
+      </section>
       
-      <p class="info">
-        <span class="location">NodeConf Theatre 2012</span>
-        <span class="speaker">{{name}}</span>
-      </p>
+      <section class="theatre">
+        
+        <h3>NodeConf Theatre</h3>
+        {{{speakers}}}
+      </section>
 
   </div>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
-  <style>
-  div#video-container {
-    text-align:center;
-    margin-bottom:20px;
-  }
-  video#nodevideo {
-    border-style:solid;
-    border-width:5px;
-    border-color:white;
-  }
-  </style>    
-
-  <div id="video-container">
   
-    <video id="nodevideo" height="480" poster="{{poster}}" controls>
-      <source src="{{m4v}}" />
-      <source src="{{ogv}}" />
-    </video>
-    <div id="footnotediv"></div>
-  </div>
-  
-  <div class="main">
-  
-    <section class="sponsors">
-      <h2>Sponsors</h2>
-
-      <div class="images-sponsors">
-        <a href="http://www.yammer.com"><img class="sponsors-logo" src="../images/logo_yammer.png" /></a>
-        <a href="http://www.joyent.com"><img class="sponsors-logo" src="../images/logo_joyent.png" /></a>
-      </div>
-      <div class="images-sponsors">
-        <a href="http://www.voxer.com"><img class="sponsors-logo" src="../images/logo_voxer.png" /></a>
-        <a href="http://www.nodejitsu.com"><img class="sponsors-logo" src="../images/logo_nodejitsu.png" /></a>
-      </div>
-      <div class="images-sponsors">
-        <a href="http://andyet.net" style="text-decoration:none">
-          <img class="sponsors-logo" style="max-height:120px;padding-right:15%;padding-left:15%;padding-top:0" src="../images/andyet-logo.png" />
-        </a>
-        <a href="http://www.ensighten.com/">
-          <img class="sponsors-logo" src="../images/ensighten_logo_large.png" style="margin-bottom:10px"/>
-        </a>
-      </div>
-    
-      <div class="images-sponsors">
-        <a href="http://www.mozilla.org" style="text-decoration:none">
-          <img class="sponsors-logo" src="../images/mozilla.png" style="margin-left:20px" ></img>
-        </a>
-        <a href="http://www.sendgrid.com">
-          <img class="sponsors-logo" src="../images/sendgrid.png" style="margin-left:40px" />
-        </a>
-      </div>
-    </section>
-  </div>
-  
-  <div id="nodisplay-container" style="visibility:hidden;"></div>
-  
-  <script>
-  
-  var ads = 
-    [ 'http://tenconf.s3.amazonaws.com/sponsors/joyent.png'
-    , 'http://tenconf.s3.amazonaws.com/sponsors/andyet.png'
-    , 'http://tenconf.s3.amazonaws.com/sponsors/yammer.png'
-    , 'http://tenconf.s3.amazonaws.com/sponsors/nodejitsu.png'
-    ]
-  
-  var index = Math.floor(Math.random()*ads.length + 1) - 1
-  var img = $('<img id="video-bumper" src="'+ads[index]+'"></img>')
-  $('#nodisplay-container').append(img)
-  img.load(function () {
-    img.remove()
-  })
-  
-  // ensure the web page (DOM) has loaded
-  document.addEventListener("DOMContentLoaded", function () {
-
-    // Create a popcorn instance by calling Popcorn("#id-of-my-video")
-    var pop = Popcorn("#nodevideo");
-    var advertHandler = function () {
-      pop.pause()
-      var t = $('#nodevideo')
-        , pos = t.offset()
-        ;
-      img.appendTo('#video-container')
-      img.css('position', 'absolute')
-      img.css({left:pos.left + 5, top:pos.top + 5 })
-      img.css({height:t.height(), width:t.width() + 1})      
-      setTimeout(function () {
-        img.hide()
-        pop.play()
-        pop.off('play', advertHandler)
-      }, 2000)
-    }
-    pop.on('play', advertHandler)
-   
-  }, false);
-  
-  </script>
-
   <footer>
+    <p>
+      Watch <a href="http://twitter.com/nodeconf">@NodeConf</a> for updates.
+    </p>
   </footer>
 
 
