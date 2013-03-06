@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>NodeConf 2013</title>
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+  article, aside, details, figcaption, figure, footer, header,
+  hgroup, menu, nav, section { display: block; }
+
+  html {font-size:100.01%;}
+  body {
+    margin: 0;
+    font-size: 100%;
+    color: #059fd2;
+    background: #f4ede7 url(images/bg.png) repeat 0 0;
+    font-weight: 400;
+  }
+  body, input, textarea {
+    font-family: "Proxima Nova", "proxima-nova-alt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .main {
+/*    background: rgba(255,255,255,.7); */
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    min-width: 280px;
+
+    max-width: 640px;
+
+    padding: 0 20px;
+
+    border-top: 6px solid #059fd2;
+  }
+
+  header {
+    margin-bottom: 72px;
+  }
+
+  .btn_cntr {
+    width: 268px;
+    margin: 24px auto;
+    padding: 12px 0;
+    border-top: 3px dotted #FFF;
+    border-bottom: 3px dotted #FFF;
+  }
+
+  .btn {
+    display: block;
+    width: 180px;
+    height: 60px;
+    margin: 12px auto;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 60px;
+    font-size: 24px;
+    letter-spacing: .15em;
+  }
+
+  a.btn,
+  a.btn:link,
+  a.btn:visited {
+    color: #FFF;
+    text-decoration: none;
+    background-color: #059fd2;
+  }
+
+  a.btn:hover,
+  a.btn:active,
+  a.btn:focus {
+    color: #FFF;
+    text-decoration: none;
+    background-color: #05c5ea;
+  }
+
+  .sponsors {
+    margin-bottom: 4.5em;
+    padding: 3em 0;
+    text-align: left;
+    overflow: hidden;
+  }
+  .images-sponsors {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  .sponsors-logo {
+    max-width: 40%;
+    padding: 4%;
+  }
+
+  h1, h2, h3, h4 {
+    color: #f94e38;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 4em;
+    letter-spacing: .01em;
+    line-height: 1.5;
+    display: block;
+    width: 268px;
+    height: 268px;
+    margin: 36px auto;
+    background: transparent url(images/nodeconf_logo_small.png) no-repeat 50% 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .info {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+  }
+
+  .info span {
+    text-align: center;
+    display: block;
+    font-weight: 800;
+  }
+
+  .location {
+    font-size: 32px;
+  }
+
+  .date {
+    font-size: 16px;
+    letter-spacing: .15em;
+  }
+
+  h2 {
+    font-weight: 800;
+
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+
+    text-align: center;
+  }
+  section {
+    text-align: left;
+    margin-bottom: 72px;
+  }
+
+  p {
+    margin-bottom: 1.5em;
+  }
+  a,
+  a:link,
+  a:visited {
+    color: #F94E38;
+    text-decoration: underline;
+  }
+  a:hover,
+  a:active,
+  a:focus {
+    color: #E53A24;
+    text-decoration: underline;
+  }
+
+ /*
+   .rhomb {
+     display: inline-block;
+     width: .25em;
+     height: .25em;
+     background: #ECE2D8;
+     -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); -webkit-transform-origin: 0 100%; -moz-transform-origin: 0 100%; -ms-transform-origin: 0 100%; -o-transform-origin: 0 100%; transform-origin: 0 100%;
+   }
+ */
+  .hint {
+    background: #F94E38;
+    color: #FFF;
+    padding: 1em;
+  }
+
+  .hint a,
+  .hint a:link,
+  .hint a:visited {
+    color: #FFF;
+    text-decoration: underline;
+  }
+  .hint a:hover,
+  .hint a:active,
+  .hint a:focus {
+    color: #FFF;
+    text-decoration: underline;
+  }
+
+  div.images {
+    width: 100%;
+  }
+  div.images img {
+    width: 48%;
+    padding-left: 1%;
+    text-align: center;
+  }
+
+
+  footer {
+    background: #059fd2;
+    color: #7bd0ec;
+    font-size: 14px;
+    margin: 0;
+    padding: 24px 0;
+    text-align: center;
+  }
+  
+  div.backie {
+    background: no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+    width:100%;
+    height:80px;
+  }
+
+  footer a,
+  footer a:link,
+  footer a:visited {
+    color: #f4ede7;
+    text-decoration: none;
+  }
+
+  footer a:hover,
+  footer a:active,
+  footer a:focus {
+    color: #f4ede7;
+    text-decoration: underline;
+  }
+  
+  img.counselor {
+    max-width:120px;
+    max-height:120px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+  }
+  div.counselors {
+    padding-top:10px;
+  }
+  div.counselors a, div.counselors a:visited {
+    text-decoration:none;
+  }
+  h2#counselor-name {
+    color:#059fd2;
+    font-size:20px;
+  }
+
+</style>
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<script type="text/javascript" src="http://use.typekit.com/ioc3jun.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+<script type="text/javascript">
+  var analyticsFileTypes = [''];
+  var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33374925-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <div class="main">
+
+      <header>
+        <h1>
+          NodeConf 2013
+        </h1>
+
+        <p class="info">
+          <span class="location">Walker Creek Ranch</span>
+          <span class="date">June 27th through June 30th 2013</span>
+        </p>
+
+        <p class="btn_cntr">
+          <a href="https://tito.io/nodeconf/nodeconf-2013" class="btn">
+            Tickets
+          </a>
+        </p>
+
+      </header>
+
+      <!-- <section class="sponsors">
+        <h2>Sponsors</h2>
+
+        <div class="images-sponsors">
+          <a href="http://www.yammer.com"><img class="sponsors-logo" src="images/logo_yammer.png" /></a>
+          <a href="http://www.joyent.com"><img class="sponsors-logo" src="images/logo_joyent.png" /></a>
+        </div>
+        <div class="images-sponsors">
+          <a href="http://www.nodejitsu.com"><img class="sponsors-logo" src="images/logo_nodejitsu.png" /></a>
+          <a href="http://www.ensighten.com/">
+            <img class="sponsors-logo" src="images/ensighten_logo_large.png"/>
+          </a>
+        </div>
+      </section> -->
+
+    </div>
+    
+    <div class="backie" style="background:url(images/aBR9P1476.jpg) no-repeat center center fixed;"></div>
+    
+    <div class="main">
+      <section class="programme">
+        
+        <h2 id="story">Our Story</h2>
+        
+        <p>For two years we’ve run two conferences: NodeConf and NodeConf SummerCamp. 
+NodeConf SummerCamp, held at Walker Creek Ranch, has been where node developers connect and discuss the future of node.js and work together in an “unconference” format.</p>
+        <p>At the same time, NodeConf has been a leader in the conference world producing innovations in format and content that have influenced and raised the bar for conferences all over the world.</p>
+        <p>NodeConf remains dedicated to building community and spreading knowledge about what is possible with node.js. This year we will continue to evolve what it means to be a conference.</p>
+
+      </section>
+    
+    </div>
+    
+    <div class="backie" style="background:url(images/aBR9P1483.jpg) no-repeat center center fixed"></div>
+    
+    <div class="main">
+      
+      <section class="programme">
+
+        <h2 id="2013">2013</h2>
+
+        <p>This year there will only be one event, NodeConf. Our goal this year is to do more than just share knowledge but to truly enable everyone attending to use node in new ways. We also want to solidify the bonds within the community and we know of no better place to do it than <a href="https://maps.google.com/maps?q=Walker+Creek+Ranch+School,+Marshall,+CA&hl=en&ll=38.174479,-122.814445&spn=0.018184,0.037379&sll=37.758475,-122.235328&sspn=0.292602,0.598068&oq=walker+creek&hq=Walker+Creek+Ranch+School,+Marshall,+CA&t=m&z=15&iwloc=A">Walker Creek Ranch</a>.</p>
+        <p>Starting on June 27th and ending on June 30th, NodeConf 2013 will be held at Walker Creek Ranch. The format is entirely new; attendees will be led through a series of hands-on workshops mixed with presentations and talks.</p>
+        <p>All tickets include accommodations at Walker Creek Ranch (Semi-Private, BunkUp and CampOut) for 3 nights, 3 meals a day, and parties at night.</p>
+        
+        <p>Early Bird tickets sold out in less than a day. More tickets are scheduled to be released on February 6th at 10pm UTC.</p>
+        
+        <p>We are still selecting content. You can help us improve the content by answering <a href="https://docs.google.com/spreadsheet/viewform?fromEmail=true&formkey=dGZlQk9GcjJtQW5WVS1GY3BBVzVCb1E6MQ">a few questions</a>.
+        
+      </section>
+      
+    </div>
+    
+    <div class="backie" style="background:url(images/aBR9P1502.jpg) no-repeat center center fixed"></div>
+    
+    <div class="main">
+      
+      <section class="sponsors" style="padding-bottom:0">
+        <h2 id="sponsors">Sponsors</h2>
+
+        <div class="images-sponsors">
+          <a href="http://www.nodejitsu.com"><img class="sponsors-logo" style="" src="images/logo_nodejitsu.png" /></a>
+          <a href="http://www.walmartlabs.com"><img class="sponsors-logo" style="margin-bottom:10px" src="images/logo_walmartlabs.png" /></a>
+        </div>
+        
+        <div class="images-sponsors">
+          <a href="http://www.voxer.com" style="text-decoration:none">
+            <img class="sponsors-logo" style="max-height:120px;padding-right:10%;padding-left:16.5%;padding-top:0" src="images/voxer.png" />
+          </a>
+          <a href="http://www.windowsazure.com"><img class="sponsors-logo" style="padding-left:8%;padding-right:0" src="images/azure.png" /></a>
+        </div>
+        
+        <div class="images-sponsors">
+          <a href="http://andyet.net" style="text-decoration:none">
+            <img class="sponsors-logo" style="max-height:120px;padding-right:10%;padding-left:15%;padding-top:0" src="images/andyet-logo.png" />
+          </a>
+          <a href="http://newrelic.com"><img class="sponsors-logo" style="max-height:120px;padding-left:15%;padding-top:0" src="images/logo_newrelic.png" /></a>
+        </div>
+        
+        
+        
+        
+      </section>
+      
+    </div>
+    
+    <div class="backie" style="background:url(images/aBR9P1568.jpg) no-repeat center center fixed"></div>
+    
+    <div class="main">
+      
+      <section class="programme">
+        <h2 id="counselors">Camp Counselors</h2>
+        
+        <h2 id="counselor-name">&nbsp</h3>
+        
+        <div class="counselors">
+          <a href="https://github.com/mikeal/" realname="Mikeal Rogers">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/d8eba8dd0e89a0580ec4157681121a79?s=420"></img>
+          </a>
+          <a href="https://github.com/isaacs/" realname="Isaac Schlueter">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/73a2b24daecb976af81e010b7a3ce3c6?s=420"></img>
+          </a>
+          <a href="https://github.com/substack/" realname="James Halliday">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/d4a2f12ceae3b7f211b661576d22bfb9?s=420"></img>
+          </a>
+          <a href="https://github.com/maxogden/" realname="Max Ogden">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/fcc9bbfe2a31c5a6225cc287ed7ae2a6?s=420"></img>
+          </a>
+          <a href="https://github.com/visnup" realname="Visnu Pitiyanuvath">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/70281240c4fc8583292ac175e05bb8fe?s=420"></img>
+          </a>
+          <a href="https://github.com/dominictarr" realname="Dominic Tarr">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/8225d7ca5e83a3f9f0bb89a61d5df72c?s=420"></img>
+          </a>
+          <a href="https://github.com/dshaw/" realname="Daniel Shaw">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/dc2beefe13f65e75fd74eae1b1c1b803?s=420"></img>
+          </a>
+          <a href="https://github.com/nexxy" realname="Emily Rose">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/e1f89f747277cc59ef8f79567dffd9e6?s=420"></img>
+          </a>
+          <a href="https://github.com/voodootikigod/" realname="Chris Williams">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/fff2222d0a24009fe938bba62946201a?s=420"></img>
+          </a>
+          <a href="https://github.com/tmpvar" realname="Elijah Insua">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/2893bc1693002e652210b3705f74b5dd?s=420"></img>
+          </a>
+          <a href="https://github.com/rwldrn" realname="Rick Waldron">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/36c697d974542aadaee06a0f39cb1437?s=420"></img>
+          </a>
+          <a href="https://github.com/stubbornella" realname="Nicole Sullivan">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/1d153775485e41e8474b115e2b30413d?s=420"></img>
+          </a>
+          <a href="https://github.com/hueniverse/" realname="Eran Hammer">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/28d0cb94cd9afcc9763dd64fea80a187?s=420"></img>
+          </a>
+          <a href="https://github.com/domenic" realname="Domenic Denicola">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/c6d819207a3010b39d13e1f59f2c0029?s=420"></img>
+          </a>
+          <a href="https://github.com/othiym23" realname="Forrest Norvell">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/44c00253ab6c0e681820c82e9a2264d1?s=420"></img>
+          </a>
+          <a href="https://github.com/jllord" realname="Jessica Lord">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/e26a281b6bd0c2145e8d0fcc834a56fb?s=420"></img>
+          </a>
+          <a href="https://github.com/qmx" realname="Douglas Campos">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/684b4bfe97a40454db104abcb601e375?s=420"></img>
+          </a>
+          <a href="https://github.com/brettstimmerman" realname="Brett Stimmerman">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/e87f9e241feb741f8f8ab64845fcd7ee?s=420"></img>
+          </a>
+          <a href="https://github.com/mcantelon" realname="Mike Cantelon">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/9898065380e09118441a55688eac587a?s=420"></img>
+          </a>
+          <a href="https://github.com/spikeburroughs" realname="Cian O'Maidin">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/79ea41410c0749c2f360a4412b9ff88d?s=420"></img>
+          </a>
+          <a href="https://github.com/aemaier" realname="Anna Maier">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/e2f17b3321d0111008dfe8bcbf8ee77b?s=420"></img>
+          </a>
+          <a href="https://github.com/Raynos" realname="Jake Verbaten">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/d840cb1fb7e828284011cc08f40a1015?s=420"></img>
+          </a>
+          <a href="https://github.com/flyswatter" realname="Dan Finlay">
+            <img class="counselor" src="https://secure.gravatar.com/avatar/b34a683d5bfd0f04f98c15ad8171f988?s=420"></img>
+          </a>
+        </div>
+        
+      </section>
+      
+      <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+      <script>
+      $('img.counselor').mouseover(function (x) {
+        $('h2#counselor-name').html($(x.target).parent().attr('realname'))
+      })
+      </script>
+      
+    </div>
+    
+    
+    <div class="backie" style="background:url(images/aBR9P1492.jpg) no-repeat center center fixed"></div>
+    
+    <div class="main">
+      
+      <section class="programme">
+        <h2 id="logistics">Logistics</h2>
+        
+        <p>Buses will leave a designated area in San Francisco on June 27th.</p>
+        
+        <p>If you do not wish to stay at the ranch you can buy a CampOut ticket and stay in one of the neighboring towns which have many B&amp;Bs. </p>        
+      </section>
+      
+    </div>
+    
+    <div class="backie" style="background:url(images/aBR9P1570.jpg) no-repeat center center fixed"></div>
+    
+    <div class="main">
+      
+      <section class="programme">
+        <h2 id="tickets">Tickets</h2>
+        
+        <p>All tickets include accommodation and 3 meals a day at the ranch.</p>
+        
+        <p>Semi-Private tickets come with a bed in a shared "dorm" in the on-site lodges.</p>
+        
+        <p>BunkUp tickets put you in a bunk bed in a shared "dorm" in the on-site lodges.</p>
+
+        <p>CampOut tickets require you to bring your own tent. There is an on-site shower and bathroom set up for all campers.</p>
+        
+        <p>The first lot of Early Bird tickets will be released on Monday January 14th at 11am PDT. More ticket lots will be released in the coming weeks and you can signup on the ticket page to be notified by email when they are announced.</p>
+      </section>
+      
+    </div>
+    
+    <div class="backie" style="background:url(images/aBR9P1514.jpg) no-repeat center center fixed"></div>
+    
+    <div class="main">
+      
+      <section class="agenda">
+        <h2 id="agenda">Agenda</h2>
+        
+        <h3>June 27th</h3>
+        
+        <p>Buses will leave downtown San Francisco. You can arrive as early as 10am. The first bus leaves at 11am and the second at 3pm.</p>
+        
+        <p>If you are driving yourself to the camp you can show up as early as 12:30pm.<p>
+        
+        <p>In the afternoon, shortly after the first bus arrives, games of kickball and foursquare will begin. A lake swimming trip will head out at 3pm.</p>
+        
+        <p>Drinks (yes, that includes beers) will be available throughout the day and in to the night.</p>
+        
+        <p>Dinner will be served at 6pm.</p>
+        
+        <p>After dinner there will be an opening talk around the campfire. After the talk will be the first nights party. The party will include a campfire, smores, and music in the boogie barn and maybe some other fun surprises :)</p>
+        
+        <h3>June 28th</h3>
+        
+        <p>Mimosa breakfast will begin at 8am.</p>
+        
+        <p>Content will begin after breakfast. Details about the content are secret but it will be a mix of hands-on workshops, talks, and other kinds of presentations.</p>
+        
+        <p>Lunch at noon.</p>
+                
+        <p>Dinner at 6pm. Party with a campfire after with smores and music in the boogie barn and more surprises.</p>
+        
+        <h3>June 29th</h3>
+        
+        <p>More or less exactly like June 28th but with different content :)</p>
+        
+        <h3>June 30th</h3>
+        
+        <p>Mimosa breakfast will being at 8am. After breakfast until lunch is open hack time. Partner up with whomever you like around the camp and hack on some stuff.</p>
+        
+        <p>Lunch at noon. After lunch you'll need to quickly get your things together to catch the shuttle leaving at 1pm. If you think you'll take a lot of time getting ready please do it before lunch. The shuttle will take everyone back to downtown San Francisco. The total trip time varies but you can count on it returning before 4pm.</p>
+        
+      </section>
+
+  </div>
+
+  <footer>
+    <p>
+      Watch <a href="http://twitter.com/nodeconf">@NodeConf</a> for updates.
+    </p>
+  </footer>
+
+</body>
+</html>
